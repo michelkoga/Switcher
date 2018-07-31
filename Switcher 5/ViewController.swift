@@ -41,9 +41,9 @@ class ViewController: NSViewController {
 				button.image = NSImage(named: NSImage.Name(rawValue: appName!))
 			}
 			if UserDefaults.standard.bool(forKey: "customizeMode") == true {
-				button.isBordered = true
+				//button.isBordered = true
 			} else {
-				button.isBordered = false
+				//button.isBordered = false
 			}
 		}
 	}
