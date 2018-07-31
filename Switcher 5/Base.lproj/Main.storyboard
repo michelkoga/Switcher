@@ -903,269 +903,368 @@
                         <rect key="frame" x="0.0" y="0.0" width="1180" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAW-ap-4cf">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAW-ap-4cf" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="20" y="280" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Activity Monitor" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="a6Z-Nj-r4o">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="c0Y-Bc-LGj"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2Q-vm-51r">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2Q-vm-51r" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="124" y="280" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Affinity Photo" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="C8d-Z9-Mme">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="O4t-84-2ne"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJ5-Om-Xle">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJ5-Om-Xle" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="228" y="280" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="App Store" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="7ab-5i-ACs">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="86c-1V-odj"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGA-VB-ZvG">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGA-VB-ZvG" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="332" y="280" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Bear" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="Qk4-Iy-iNW">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="P1i-hg-s8s"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmx-bn-kzt">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmx-bn-kzt" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="436" y="280" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Calculator" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="RMy-9Q-88d">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="tbt-Yg-fsF"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xar-06-91U">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xar-06-91U" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="540" y="280" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Calendar" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="vyF-8g-D0u">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="zsl-Ou-vIR"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ulV-aZ-Ymh">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ulV-aZ-Ymh" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="644" y="280" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Day One" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="Bbh-FE-KUQ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="it6-V6-oei"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20p-hP-TFO">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20p-hP-TFO" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="748" y="280" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Dictionary" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="WFR-qQ-UOR">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="hKH-C4-vkY"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RUE-Cq-tjA">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RUE-Cq-tjA" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="852" y="280" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Finder" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="fy9-DW-axb">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="wJx-J9-okb"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-JU-m64">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-JU-m64" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="956" y="280" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Keynote" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="sx5-Am-2pB">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="5Vy-kL-8wh"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Or-Sb-Qit">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Or-Sb-Qit" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="1060" y="280" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Kindle" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="0fF-gO-cUX">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="oBE-h6-nDB"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hq3-w7-HJU">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hq3-w7-HJU" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="20" y="176" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LINE" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="bY4-l1-6da">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="snk-RD-orE"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yex-YP-VHE">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yex-YP-VHE" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="124" y="176" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Mail" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="w6V-Dt-3d1">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="a4F-W6-Pt2"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVh-Tm-PNp">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVh-Tm-PNp" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="228" y="176" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Maps" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="ve9-bw-zKd">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="X8h-Zx-Ras"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPV-MK-v1A">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPV-MK-v1A" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="332" y="176" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Messages" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="GJt-Ff-BdT">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="1JH-gv-epq"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rk1-XI-9Mj">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rk1-XI-9Mj" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="436" y="176" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Notes" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="cfa-IN-2M1">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="0e1-OT-rN1"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXa-Zc-O18">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXa-Zc-O18" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="540" y="176" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Numbers" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="Twc-GB-WDS">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="C1f-AF-PKU"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Jc-JA-OW1">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Jc-JA-OW1" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="644" y="176" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="OmniFocus" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="4d5-4f-6Vh">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="E2U-Tg-Hmm"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zxJ-19-EC2">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zxJ-19-EC2" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="748" y="176" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Pages" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="ItI-MU-eXR">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="Rtc-zg-xYc"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yV3-Wc-f28">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yV3-Wc-f28" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="852" y="176" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Photos" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="VGn-Rc-ttl">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="hOs-a4-6Bx"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="klk-Og-8Kt">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="klk-Og-8Kt" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="956" y="176" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Pixelmator" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="yQh-dy-2xg">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="gZp-Ek-NAP"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Fl-qj-Gph">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Fl-qj-Gph" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="1060" y="176" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Preview" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="ggO-Sw-CaR">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="lAs-5L-UWi"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eYU-lf-dbA">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eYU-lf-dbA" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="20" y="72" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Reminders" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="IxA-3f-K1N">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="CLr-1T-sej"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XfO-q1-Mia">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XfO-q1-Mia" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="124" y="72" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Safari" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="MPb-u5-X5h">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="zCL-aI-HpT"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y83-b3-esp">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y83-b3-esp" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="228" y="72" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Stickies" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="nB0-tq-SG6">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="FbE-6w-E0p"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s0u-dB-T0j">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s0u-dB-T0j" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="332" y="72" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Sublime Text" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="Zv2-Y3-JyM">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="BJD-Jp-d41"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLj-te-FuH">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLj-te-FuH" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="436" y="72" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="System Preferences" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="rsp-nU-TIN">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="n6z-uk-tat"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iiO-9f-M6a">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iiO-9f-M6a" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="540" y="72" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Terminal" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="AT5-jO-EJm">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="Zy7-VT-JNg"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Sd-SK-GmW">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Sd-SK-GmW" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="644" y="72" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="TextEdit" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="WCD-mI-r7x">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="HQd-NJ-eaA"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-DC-KQu">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-DC-KQu" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="748" y="72" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="UlyssesMac" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="fM3-aC-fC9">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="LeO-E1-Llc"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNF-FW-hkH">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNF-FW-hkH" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="852" y="72" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Xcode-beta" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="Gv3-NM-jrv">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="G5c-S5-f4e"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OnM-nr-EL8">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OnM-nr-EL8" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="956" y="72" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="iBooks" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="nkk-SI-K4V">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="Gbb-5t-BmM"/>
+                                </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PTE-aB-NgE">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PTE-aB-NgE" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="1060" y="72" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="iTunes" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="CGb-ib-b3G">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="setApp:" target="443-wp-bPm" id="QK0-Kq-eXz"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-Sn-0g9">
                                 <rect key="frame" x="549" y="13" width="82" height="32"/>

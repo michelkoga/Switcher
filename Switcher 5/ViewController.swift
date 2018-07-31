@@ -49,10 +49,11 @@ class ViewController: NSViewController {
 	}
 	
 	override func viewDidLoad() {
+		super.viewDidLoad()
 		// Observer (1) to redraw buttons when change customize mode
 		UserDefaults.standard.addObserver(self, forKeyPath: "customizeMode", options: NSKeyValueObservingOptions.new, context: nil)
-
-		super.viewDidLoad()
+		// Observer (2) to redraw buttons when app changed
+		UserDefaults.standard.addObserver(self, forKeyPath: "appChanged", options: NSKeyValueObservingOptions.new, context: nil)
 		NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) {
 			switch $0.modifierFlags.intersection(.deviceIndependentFlagsMask) {
 			case [.command, .option]:
@@ -95,6 +96,9 @@ class ViewController: NSViewController {
 	// When observer (1) observe change in customize mode user default, this function will start
 	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
 		drawButtons()
+		if UserDefaults.standard.bool(forKey: "appChanged") == true {
+			UserDefaults.standard.set(false, forKey: "appChanged")
+		}
 	}
 	override var representedObject: Any? {
 		didSet {
@@ -117,9 +121,7 @@ class ViewController: NSViewController {
 	func launchApp(withCharacter character: String) {
 		if UserDefaults.standard.bool(forKey: "customizeMode") == false {
 			if UserDefaults.standard.contains(key: character) {
-				print("User Defaults Contain Value for \(character)")
 				let appName = UserDefaults.standard.string(forKey: character)
-				print("Opening \(appName!)")
 				NSApp.hide(nil)
 				if !NSWorkspace.shared.launchApplication(appName!) {
 					print("Couldn't open App: \(appName!)")
@@ -130,7 +132,7 @@ class ViewController: NSViewController {
 				NSApp.hide(nil)
 			}
 		} else {
-			print("Customize mode")
+			UserDefaults.standard.set(character, forKey: "chosenKey")
 			displayCustomizeSheet()
 			
 		}

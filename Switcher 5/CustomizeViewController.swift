@@ -13,5 +13,11 @@ class CustomizeViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+	@IBAction func setApp(_ sender: Button) {
+		let character = UserDefaults.standard.string(forKey: "chosenKey")
+		UserDefaults.standard.set(sender.image?.name(), forKey: character!)
+		UserDefaults.standard.set(true, forKey: "appChanged")
+		self.dismissViewController(self)
+	}
 	
 }

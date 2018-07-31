@@ -66,14 +66,14 @@
 				DEC2690721105B8E00219B49 /* Window.swift */,
 				DE8B794E21103B1400B0D8BD /* AppDelegate.swift */,
 				DE8B795021103B1400B0D8BD /* ViewController.swift */,
+				DEC2690921109B7E00219B49 /* CustomizeViewController.swift */,
 				DE8B795221103B1500B0D8BD /* Assets.xcassets */,
 				DE8B795421103B1500B0D8BD /* Main.storyboard */,
-				DEC2690B2110AA2B00219B49 /* ListOfApps.swift */,
-				DEC2690921109B7E00219B49 /* CustomizeViewController.swift */,
-				DE8B795E21103D0300B0D8BD /* Button.swift */,
 				DE8B796021103D3500B0D8BD /* TODO */,
+				DE8B795E21103D0300B0D8BD /* Button.swift */,
 				DE8B795721103B1500B0D8BD /* Info.plist */,
 				DE8B795821103B1500B0D8BD /* Switcher_5.entitlements */,
+				DEC2690B2110AA2B00219B49 /* ListOfApps.swift */,
 			);
 			path = "Switcher 5";
 			sourceTree = "<group>";
