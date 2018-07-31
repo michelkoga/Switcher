@@ -1,5 +1,5 @@
 DOING:
-- Make translucent
+- make a nice icon
 
 TODO:
 - Make a better show mode for customize sheet
@@ -15,3 +15,4 @@ else -> launch App
 - Link to customize view
 - Create list of apps (didn't used this file)
 - Create change app system
+- Make translucent
