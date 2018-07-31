@@ -78,18 +78,18 @@ class ViewController: NSViewController {
 			return nil
 		}
 		UserDefaults.standard.set(false, forKey: "customizeMode")
-		UserDefaults.standard.set("Finder", forKey: "a")
-		UserDefaults.standard.set("Terminal", forKey: "o")
-		UserDefaults.standard.set("Day One", forKey: "e")
-		UserDefaults.standard.set("UlyssesMac", forKey: "u")
-		UserDefaults.standard.set("Bear", forKey: "i")
-		
-		UserDefaults.standard.set("Pixelmator", forKey: "d")
-		UserDefaults.standard.set("Safari", forKey: "h")
-		UserDefaults.standard.set("Xcode-beta", forKey: "t")
-		UserDefaults.standard.set("Sublime Text", forKey: "n")
-		UserDefaults.standard.set("Notes", forKey: "s")
-		UserDefaults.standard.set("Dictionary", forKey: "-")
+//		UserDefaults.standard.set("Finder", forKey: "a")
+//		UserDefaults.standard.set("Terminal", forKey: "o")
+//		UserDefaults.standard.set("Day One", forKey: "e")
+//		UserDefaults.standard.set("UlyssesMac", forKey: "u")
+//		UserDefaults.standard.set("Bear", forKey: "i")
+//		
+//		UserDefaults.standard.set("Pixelmator", forKey: "d")
+//		UserDefaults.standard.set("Safari", forKey: "h")
+//		UserDefaults.standard.set("Xcode-beta", forKey: "t")
+//		UserDefaults.standard.set("Sublime Text", forKey: "n")
+//		UserDefaults.standard.set("Notes", forKey: "s")
+//		UserDefaults.standard.set("Dictionary", forKey: "-")
 		
 		drawButtons()
 	}

@@ -16,6 +16,7 @@
 		DEC2690821105B8E00219B49 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690721105B8E00219B49 /* Window.swift */; };
 		DEC2690A21109B7E00219B49 /* CustomizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690921109B7E00219B49 /* CustomizeViewController.swift */; };
 		DEC2690C2110AA2B00219B49 /* ListOfApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690B2110AA2B00219B49 /* ListOfApps.swift */; };
+		DEC2690E2110CBF300219B49 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690D2110CBF300219B49 /* VisualEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		DEC2690721105B8E00219B49 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		DEC2690921109B7E00219B49 /* CustomizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeViewController.swift; sourceTree = "<group>"; };
 		DEC2690B2110AA2B00219B49 /* ListOfApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfApps.swift; sourceTree = "<group>"; };
+		DEC2690D2110CBF300219B49 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				DEC2690921109B7E00219B49 /* CustomizeViewController.swift */,
 				DE8B795221103B1500B0D8BD /* Assets.xcassets */,
 				DE8B795421103B1500B0D8BD /* Main.storyboard */,
+				DEC2690D2110CBF300219B49 /* VisualEffectView.swift */,
 				DE8B796021103D3500B0D8BD /* TODO */,
 				DE8B795E21103D0300B0D8BD /* Button.swift */,
 				DE8B795721103B1500B0D8BD /* Info.plist */,
@@ -151,6 +154,7 @@
 			files = (
 				DEC2690C2110AA2B00219B49 /* ListOfApps.swift in Sources */,
 				DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */,
+				DEC2690E2110CBF300219B49 /* VisualEffectView.swift in Sources */,
 				DE8B795F21103D0300B0D8BD /* Button.swift in Sources */,
 				DE8B794F21103B1400B0D8BD /* AppDelegate.swift in Sources */,
 				DEC2690A21109B7E00219B49 /* CustomizeViewController.swift in Sources */,

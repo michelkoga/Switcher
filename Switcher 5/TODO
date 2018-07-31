@@ -1,11 +1,8 @@
-Doing:
-- Link to customize view
-- Create list of apps
-- Create change app system
+DOING:
+- Make translucent
 
 TODO:
 - Make a better show mode for customize sheet
-- Make translucent
 
 DONE:
 - Create an keyName Button
@@ -15,3 +12,6 @@ DONE:
 - Create an customize mode
 - if customize mode, button click -> choose app
 else -> launch App
+- Link to customize view
+- Create list of apps (didn't used this file)
+- Create change app system
