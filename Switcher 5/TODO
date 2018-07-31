@@ -1,2 +1,17 @@
-Doing
+Doing:
+- Link to customize view
+- Create list of apps
+- Create change app system
+
+TODO:
+- Make a better show mode for customize sheet
+- Make translucent
+
+DONE:
 - Create an keyName Button
+- Create Menu
+- Put in the center (How?)
+- Create customize structure
+- Create an customize mode
+- if customize mode, button click -> choose app
+else -> launch App

@@ -9,7 +9,15 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+//	var observer: NSKeyValueObservation?
+//
+//	init() {
+//		observer = UserDefaults.standard.observe(\.customizeMode, options: [.initial, .new], changeHandler: { (defaults, change) in
+//			print("changed")
+//			})
+//	}
+	// MARK: Variables:
+	
 	@IBOutlet weak var buttonA: Button!
 	@IBOutlet weak var buttonS: Button!
 	@IBOutlet weak var buttonD: Button!
@@ -22,14 +30,53 @@ class ViewController: NSViewController {
 	@IBOutlet weak var buttonSemicolon: Button!
 	@IBOutlet weak var buttonQuote: Button!
 	
+	enum LaunchAppError: Error {
+		case invalidApp
+	}
 	
+	fileprivate func drawButtons() {
+		for case let button as Button in self.view.subviews {
+			if UserDefaults.standard.contains(key: button.character) {
+				let appName = UserDefaults.standard.string(forKey: button.character)
+				button.image = NSImage(named: NSImage.Name(rawValue: appName!))
+			}
+			if UserDefaults.standard.bool(forKey: "customizeMode") == true {
+				button.isBordered = true
+			} else {
+				button.isBordered = false
+			}
+		}
+	}
 	
 	override func viewDidLoad() {
+		// Observer (1) to redraw buttons when change customize mode
+		UserDefaults.standard.addObserver(self, forKeyPath: "customizeMode", options: NSKeyValueObservingOptions.new, context: nil)
+
 		super.viewDidLoad()
+		NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) {
+			switch $0.modifierFlags.intersection(.deviceIndependentFlagsMask) {
+			case [.command, .option]:
+				NSApp.activate(ignoringOtherApps: true)
+			default:
+				break
+			}
+		}
+		NSEvent.addGlobalMonitorForEvents(matching: .keyUp){_ in
+			// print("Release Keys") confirmated
+			NSApp.hide(nil) // necessário
+		}
+		NSEvent.addGlobalMonitorForEvents(matching: .leftMouseUp) {_ in
+			if UserDefaults.standard.bool(forKey: "customizeMode") == false {
+				NSApp.deactivate()
+				NSApp.hide(nil)
+			}
+		}
+		
 		NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
 			self.launchApp(withCharacter: $0.characters!)
 			return nil
 		}
+		UserDefaults.standard.set(false, forKey: "customizeMode")
 		UserDefaults.standard.set("Finder", forKey: "a")
 		UserDefaults.standard.set("Terminal", forKey: "o")
 		UserDefaults.standard.set("Day One", forKey: "e")
@@ -42,42 +89,58 @@ class ViewController: NSViewController {
 		UserDefaults.standard.set("Sublime Text", forKey: "n")
 		UserDefaults.standard.set("Notes", forKey: "s")
 		UserDefaults.standard.set("Dictionary", forKey: "-")
+		
+		drawButtons()
 	}
-
+	// When observer (1) observe change in customize mode user default, this function will start
+	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+		drawButtons()
+	}
 	override var representedObject: Any? {
 		didSet {
-		// Update the view, if already loaded.
+		print("RepresentedObject")
 		}
 	}
 	// MARK: Actions
-	// Key Press Case:
-	func keyDown(with keyName: String) {
-		print("Key Down")
-	}
 	// Button Press Case:
 	@IBAction func buttonPressed(_ sender: Button) {
 		launchApp(withCharacter: sender.character)
 	}
-	
+	// MARK: display customize View Controller:
+	lazy var customizeViewController: CustomizeViewController = {
+		return self.storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "customizeView")) as! NSViewController
+		}() as! CustomizeViewController
+	func displayCustomizeSheet() {
+		self.presentViewControllerAsSheet(customizeViewController)
+	}
 	// MARK: Functions
-//	func launchApp(withAppName appName: String) {
-//		//NSApp.hide(nil)
-//		NSWorkspace.shared.launchApplication(appName)
-//	}
 	func launchApp(withCharacter character: String) {
-		if UserDefaults.standard.contains(key: character) {
-			print("User Defaults Contain Value for \(character)")
-			let appName = UserDefaults.standard.string(forKey: character)
-			print("Opening \(appName!)")
-			NSWorkspace.shared.launchApplication(appName!)
+		if UserDefaults.standard.bool(forKey: "customizeMode") == false {
+			if UserDefaults.standard.contains(key: character) {
+				print("User Defaults Contain Value for \(character)")
+				let appName = UserDefaults.standard.string(forKey: character)
+				print("Opening \(appName!)")
+				NSApp.hide(nil)
+				if !NSWorkspace.shared.launchApplication(appName!) {
+					print("Couldn't open App: \(appName!)")
+				}
+			} else {
+				print("User Defaults doesn't contains value for \(character)")
+				NSApp.deactivate()
+				NSApp.hide(nil)
+			}
 		} else {
-			print("User Defaults doesn't contains value for \(character)")
+			print("Customize mode")
+			displayCustomizeSheet()
+			
 		}
 	}
-	
 }
 extension UserDefaults {
 	func contains(key: String) -> Bool {
 			return UserDefaults.standard.object(forKey: key) != nil
+	}
+	@objc dynamic var customizeMode: Bool {
+		return bool(forKey: "customizeMode")
 	}
 }

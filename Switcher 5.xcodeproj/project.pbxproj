@@ -13,6 +13,8 @@
 		DE8B795621103B1500B0D8BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8B795421103B1500B0D8BD /* Main.storyboard */; };
 		DE8B795F21103D0300B0D8BD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B795E21103D0300B0D8BD /* Button.swift */; };
 		DE8B796121103D3500B0D8BD /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = DE8B796021103D3500B0D8BD /* TODO */; };
+		DEC2690821105B8E00219B49 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690721105B8E00219B49 /* Window.swift */; };
+		DEC2690A21109B7E00219B49 /* CustomizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690921109B7E00219B49 /* CustomizeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		DE8B795821103B1500B0D8BD /* Switcher_5.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Switcher_5.entitlements; sourceTree = "<group>"; };
 		DE8B795E21103D0300B0D8BD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		DE8B796021103D3500B0D8BD /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		DEC2690721105B8E00219B49 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		DEC2690921109B7E00219B49 /* CustomizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +61,12 @@
 		DE8B794D21103B1400B0D8BD /* Switcher 5 */ = {
 			isa = PBXGroup;
 			children = (
+				DEC2690721105B8E00219B49 /* Window.swift */,
 				DE8B794E21103B1400B0D8BD /* AppDelegate.swift */,
 				DE8B795021103B1400B0D8BD /* ViewController.swift */,
 				DE8B795221103B1500B0D8BD /* Assets.xcassets */,
 				DE8B795421103B1500B0D8BD /* Main.storyboard */,
+				DEC2690921109B7E00219B49 /* CustomizeViewController.swift */,
 				DE8B795E21103D0300B0D8BD /* Button.swift */,
 				DE8B796021103D3500B0D8BD /* TODO */,
 				DE8B795721103B1500B0D8BD /* Info.plist */,
@@ -143,6 +149,8 @@
 				DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */,
 				DE8B795F21103D0300B0D8BD /* Button.swift in Sources */,
 				DE8B794F21103B1400B0D8BD /* AppDelegate.swift in Sources */,
+				DEC2690A21109B7E00219B49 /* CustomizeViewController.swift in Sources */,
+				DEC2690821105B8E00219B49 /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

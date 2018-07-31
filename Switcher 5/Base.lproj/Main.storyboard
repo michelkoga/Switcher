@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14306.4"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -683,9 +684,9 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                <windowController storyboardIdentifier="Main" id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" releasedWhenClosed="NO" animationBehavior="none" titleVisibility="hidden" id="IQv-IB-iLA" customClass="Window" customModule="Switcher_5" customModuleProvider="target">
+                        <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES" stationary="YES" participatesInCycle="YES"/>
                         <rect key="contentRect" x="196" y="240" width="1180" height="140"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
@@ -703,20 +704,19 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Switcher_5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="XfG-lQ-9wD" customClass="ViewController" customModule="Switcher_5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="1180" height="140"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W8W-5J-8BM" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="20" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="F3x-om-nYn">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="F3x-om-nYn">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="a"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Finder"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="a"/>
                                 </userDefinedRuntimeAttributes>
@@ -727,12 +727,11 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6d-Os-F5V" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="124" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="kPO-pr-4QY">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="kPO-pr-4QY">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="s"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Terminal"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="o"/>
                                 </userDefinedRuntimeAttributes>
@@ -743,12 +742,11 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jUF-Ly-ndQ" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="228" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="YPQ-Kr-6hd">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="YPQ-Kr-6hd">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="d"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Day One"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="e"/>
                                 </userDefinedRuntimeAttributes>
@@ -759,12 +757,11 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ub-oe-Lh8" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="332" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="iGY-Hw-DNU">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="iGY-Hw-DNU">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="f"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="UlyssesMac"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="u"/>
                                 </userDefinedRuntimeAttributes>
@@ -775,12 +772,11 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="llF-1f-uqh" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="436" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="mOy-hI-g44">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="mOy-hI-g44">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="g"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Pixelmator"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="i"/>
                                 </userDefinedRuntimeAttributes>
@@ -791,12 +787,11 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2t-y0-HHk" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="540" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="j9s-t6-aGX">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="j9s-t6-aGX">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="h"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Bear"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="d"/>
                                 </userDefinedRuntimeAttributes>
@@ -807,12 +802,11 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U9o-RM-hEW" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="644" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="yNC-73-joi">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="yNC-73-joi">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="j"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Safari"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="h"/>
                                 </userDefinedRuntimeAttributes>
@@ -823,12 +817,11 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iGl-FU-QPf" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="748" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="8u9-Va-dyw">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="8u9-Va-dyw">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="k"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Xcode"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="t"/>
                                 </userDefinedRuntimeAttributes>
@@ -839,12 +832,11 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7d-A5-5Xg" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="852" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="ucG-zd-QDP">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ucG-zd-QDP">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="l"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Sublime Text"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="n"/>
                                 </userDefinedRuntimeAttributes>
@@ -855,12 +847,11 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u6D-05-sN6" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="956" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="OAX-xV-3Qi">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="OAX-xV-3Qi">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value=";"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Notes"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="s"/>
                                 </userDefinedRuntimeAttributes>
@@ -871,12 +862,11 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1go-Xr-fnd" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="1060" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="Skv-lX-ktz">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Skv-lX-ktz">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="'"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Dictionary"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="-"/>
                                 </userDefinedRuntimeAttributes>
@@ -898,11 +888,67 @@
                         <outlet property="buttonQuote" destination="1go-Xr-fnd" id="1OQ-gl-DS3"/>
                         <outlet property="buttonS" destination="A6d-Os-F5V" id="5Su-29-2ZA"/>
                         <outlet property="buttonSemicolon" destination="u6D-05-sN6" id="VSE-w4-OEY"/>
+                        <segue destination="443-wp-bPm" kind="sheet" identifier="viewControllerSegues" id="h1H-ue-pfO"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="697"/>
+        </scene>
+        <!--Customize View Controller-->
+        <scene sceneID="uDc-Cc-vxR">
+            <objects>
+                <viewController storyboardIdentifier="customizeView" id="443-wp-bPm" customClass="CustomizeViewController" customModule="Switcher_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="mFv-zY-RQG">
+                        <rect key="frame" x="0.0" y="0.0" width="1180" height="280"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView wantsLayer="YES" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqh-0U-G1M">
+                                <rect key="frame" x="0.0" y="74" width="1180" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="VP8-su-9Xu">
+                                    <rect key="frame" x="1" y="1" width="1178" height="204"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView ambiguous="YES" id="WkX-KY-21l">
+                                            <rect key="frame" x="0.0" y="0.0" width="1178" height="158"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="Mv4-nV-9Rn">
+                                                <size key="itemSize" width="50" height="50"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </collectionView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="ccR-aD-8s9">
+                                    <rect key="frame" x="1" y="144" width="233" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="H1T-Ow-nOc">
+                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-Sn-0g9">
+                                <rect key="frame" x="556" y="13" width="82" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xX4-KU-g0I">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="dismissController:" target="443-wp-bPm" id="m4a-mF-EuC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="P9A-fV-Tzs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="1124"/>
         </scene>
     </scenes>
 </document>
