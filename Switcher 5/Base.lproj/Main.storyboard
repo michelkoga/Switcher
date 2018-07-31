@@ -718,6 +718,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="a"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Finder"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="character" value="a"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="Aig-h5-z8a"/>
@@ -733,6 +734,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="s"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Terminal"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="character" value="o"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="rLU-n9-beP"/>
@@ -748,6 +750,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="d"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Day One"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="character" value="e"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="mn2-bf-Lnb"/>
@@ -763,6 +766,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="f"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="UlyssesMac"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="character" value="u"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="RKw-rz-jB2"/>
@@ -778,6 +782,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="g"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Pixelmator"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="character" value="i"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="dDF-Ha-Wkq"/>
@@ -793,6 +798,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="h"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Bear"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="character" value="d"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="vby-n2-pYO"/>
@@ -808,6 +814,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="j"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Safari"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="character" value="h"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="tg1-8D-TsT"/>
@@ -823,6 +830,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="k"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Xcode"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="character" value="t"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="qld-ba-uOp"/>
@@ -838,6 +846,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="l"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Sublime Text"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="character" value="n"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="Sk5-qn-LQ7"/>
@@ -851,8 +860,9 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="semicolon"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value=";"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Notes"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="character" value="s"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="kUW-5x-FJP"/>
@@ -866,8 +876,9 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="quote"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="'"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Dictionary"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="character" value="-"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="ZPi-G7-U7D"/>

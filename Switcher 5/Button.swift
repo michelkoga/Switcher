@@ -10,7 +10,7 @@ import Cocoa
 
 class Button: NSButton {
 	
-	@IBInspectable var keyName: String = ""
+	@IBInspectable var character: String = ""
 	@IBInspectable var appName: String = ""
 	
     override func draw(_ dirtyRect: NSRect) {
