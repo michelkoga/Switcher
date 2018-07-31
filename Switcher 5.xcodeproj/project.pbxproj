@@ -11,6 +11,8 @@
 		DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B795021103B1400B0D8BD /* ViewController.swift */; };
 		DE8B795321103B1500B0D8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8B795221103B1500B0D8BD /* Assets.xcassets */; };
 		DE8B795621103B1500B0D8BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8B795421103B1500B0D8BD /* Main.storyboard */; };
+		DE8B795F21103D0300B0D8BD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B795E21103D0300B0D8BD /* Button.swift */; };
+		DE8B796121103D3500B0D8BD /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = DE8B796021103D3500B0D8BD /* TODO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		DE8B795521103B1500B0D8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE8B795721103B1500B0D8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE8B795821103B1500B0D8BD /* Switcher_5.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Switcher_5.entitlements; sourceTree = "<group>"; };
+		DE8B795E21103D0300B0D8BD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		DE8B796021103D3500B0D8BD /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				DE8B795021103B1400B0D8BD /* ViewController.swift */,
 				DE8B795221103B1500B0D8BD /* Assets.xcassets */,
 				DE8B795421103B1500B0D8BD /* Main.storyboard */,
+				DE8B795E21103D0300B0D8BD /* Button.swift */,
+				DE8B796021103D3500B0D8BD /* TODO */,
 				DE8B795721103B1500B0D8BD /* Info.plist */,
 				DE8B795821103B1500B0D8BD /* Switcher_5.entitlements */,
 			);
@@ -121,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8B796121103D3500B0D8BD /* TODO in Resources */,
 				DE8B795321103B1500B0D8BD /* Assets.xcassets in Resources */,
 				DE8B795621103B1500B0D8BD /* Main.storyboard in Resources */,
 			);
@@ -134,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */,
+				DE8B795F21103D0300B0D8BD /* Button.swift in Sources */,
 				DE8B794F21103B1400B0D8BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

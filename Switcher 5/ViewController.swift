@@ -10,10 +10,22 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+	@IBOutlet weak var buttonA: Button!
+	@IBOutlet weak var buttonS: Button!
+	@IBOutlet weak var buttonD: Button!
+	@IBOutlet weak var buttonF: Button!
+	@IBOutlet weak var buttonG: Button!
+	@IBOutlet weak var buttonH: Button!
+	@IBOutlet weak var buttonJ: Button!
+	@IBOutlet weak var buttonK: Button!
+	@IBOutlet weak var buttonL: Button!
+	@IBOutlet weak var buttonSemicolon: Button!
+	@IBOutlet weak var buttonQuote: Button!
+	
+	
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
-		// Do any additional setup after loading the view.
 	}
 
 	override var representedObject: Any? {
@@ -21,7 +33,19 @@ class ViewController: NSViewController {
 		// Update the view, if already loaded.
 		}
 	}
-
-
+	// MARK: Actions
+	// Button Press Case:
+	@IBAction func buttonPressed(_ sender: Button) {
+		launchApp(withAppName: sender.appName)
+	}
+	// Key Press Case:
+	
+	
+	// MARK: Functions
+	func launchApp(withAppName appName: String) {
+		NSApp.hide(nil)
+		NSWorkspace.shared.launchApplication(appName)
+	}
+	
 }
 
