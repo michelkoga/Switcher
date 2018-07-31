@@ -12,12 +12,21 @@ class CustomizeViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//		drawButtons()
     }
-	@IBAction func setApp(_ sender: Button) {
+	@IBAction func setApp(_ sender: NSButton) {
 		let character = UserDefaults.standard.string(forKey: "chosenKey")
 		UserDefaults.standard.set(sender.image?.name(), forKey: character!)
 		UserDefaults.standard.set(true, forKey: "appChanged")
 		self.dismissViewController(self)
 	}
-	
+//	fileprivate func drawButtons() {
+//		for case let button as CustomizeButton in self.view.subviews {
+//			if button.tag != 1 {
+//				let appName = button.appName
+//				button.image = NSImage(named: NSImage.Name(rawValue: appName))
+//			}
+//
+//		}
+//	}
 }

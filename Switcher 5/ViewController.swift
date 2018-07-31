@@ -9,13 +9,6 @@
 import Cocoa
 
 class ViewController: NSViewController {
-//	var observer: NSKeyValueObservation?
-//
-//	init() {
-//		observer = UserDefaults.standard.observe(\.customizeMode, options: [.initial, .new], changeHandler: { (defaults, change) in
-//			print("changed")
-//			})
-//	}
 	// MARK: Variables:
 	
 	@IBOutlet weak var buttonA: Button!

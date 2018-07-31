@@ -17,6 +17,7 @@
 		DEC2690A21109B7E00219B49 /* CustomizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690921109B7E00219B49 /* CustomizeViewController.swift */; };
 		DEC2690C2110AA2B00219B49 /* ListOfApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690B2110AA2B00219B49 /* ListOfApps.swift */; };
 		DEC2690E2110CBF300219B49 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690D2110CBF300219B49 /* VisualEffectView.swift */; };
+		DEC269102110FAF100219B49 /* CustomizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690F2110FAF100219B49 /* CustomizeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		DEC2690921109B7E00219B49 /* CustomizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeViewController.swift; sourceTree = "<group>"; };
 		DEC2690B2110AA2B00219B49 /* ListOfApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfApps.swift; sourceTree = "<group>"; };
 		DEC2690D2110CBF300219B49 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		DEC2690F2110FAF100219B49 /* CustomizeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				DEC2690D2110CBF300219B49 /* VisualEffectView.swift */,
 				DE8B796021103D3500B0D8BD /* TODO */,
 				DE8B795E21103D0300B0D8BD /* Button.swift */,
+				DEC2690F2110FAF100219B49 /* CustomizeButton.swift */,
 				DE8B795721103B1500B0D8BD /* Info.plist */,
 				DE8B795821103B1500B0D8BD /* Switcher_5.entitlements */,
 				DEC2690B2110AA2B00219B49 /* ListOfApps.swift */,
@@ -159,6 +162,7 @@
 				DE8B794F21103B1400B0D8BD /* AppDelegate.swift in Sources */,
 				DEC2690A21109B7E00219B49 /* CustomizeViewController.swift in Sources */,
 				DEC2690821105B8E00219B49 /* Window.swift in Sources */,
+				DEC269102110FAF100219B49 /* CustomizeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
