@@ -1,7 +1,8 @@
 DOING:
-- More keys
+- Don't forget commit
 
 TODO:
+- If there is no app, do nothing or hide? (no momento, hide)
 - Make a better show mode for customize sheet
 - Preferences Window
 	- Number of rows?
@@ -24,3 +25,4 @@ else -> launch App
 - Make translucent
 - make a nice icon
 - Create a refresh menu item in the icon menu
+- More keys (matrix 11 x 4)
