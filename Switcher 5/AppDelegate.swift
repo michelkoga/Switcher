@@ -48,11 +48,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	func constructMenu() {
 		let menu = NSMenu()
 		
-		menu.addItem(NSMenuItem(title: "Customize", action: #selector(AppDelegate.customizeMode(_:)), keyEquivalent: "s"))
+		menu.addItem(NSMenuItem(title: "Customize", action: #selector(AppDelegate.customizeMode(_:)), keyEquivalent: "c"))
 		menu.addItem(NSMenuItem.separator())
+		menu.addItem(NSMenuItem(title: "Refresh", action: #selector(AppDelegate.restart(_:)), keyEquivalent: "r"))
 		menu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
 		
 		statusItem.menu = menu
+	}
+	@objc func restart(_ sender: NSMenuItem) {
+		let url = URL(fileURLWithPath: Bundle.main.resourcePath!)
+		let path = url.deletingLastPathComponent().deletingLastPathComponent().absoluteString
+		let task = Process()
+		task.launchPath = "/usr/bin/open"
+		task.arguments = [path]
+		task.launch()
+		exit(0)
 	}
 }
 

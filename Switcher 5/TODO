@@ -1,5 +1,5 @@
 DOING:
-- make a nice icon
+- Create a refresh menu item in the icon menu
 
 TODO:
 - Make a better show mode for customize sheet
@@ -16,3 +16,4 @@ else -> launch App
 - Create list of apps (didn't used this file)
 - Create change app system
 - Make translucent
+- make a nice icon
