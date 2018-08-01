@@ -1373,6 +1373,608 @@
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="x4X-m9-BwP"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAq-HH-R1G" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="20" y="203" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="LoY-ap-XOJ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="a"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="0rZ-V4-crT"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bh-qt-EbD" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="124" y="203" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="w2K-ne-h0w">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="s"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="Ln7-ot-12U"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HxH-W3-gLp" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="228" y="203" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="ko4-nL-P30">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="d"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="4iy-AX-USh"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Prc-VZ-PRz" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="436" y="203" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="6SI-E5-aeO">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="g"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="QNg-Qu-80U"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXe-R1-MsK" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="540" y="203" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="ddN-Ee-iJM">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="h"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="3h7-ep-VIj"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u7w-7A-lZ1" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="644" y="203" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="SyA-QI-WTu">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="j"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="BbM-nF-pIu"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1HQ-RJ-vgf" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="748" y="203" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="PmL-xl-DZ0">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="k"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="Qx9-YP-exq"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iwd-WB-AyA" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="852" y="203" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="BpZ-Xe-W4b">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="l"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="Vm1-E9-6OT"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ok4-OL-msM" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="956" y="203" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="Oeg-KS-YCz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value=";"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="pPX-E3-BhO"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8db-8I-TRg" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="1060" y="203" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="G8v-nK-tXn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="'"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="k9b-sT-zq0"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQc-c6-YwD" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="332" y="411" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="rgY-QL-A1V">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="4"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="vMT-yJ-Sli"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q5w-Fd-wXB" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="20" y="411" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="alQ-rO-RVN">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="1"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="MF6-0Y-HqL"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-e6-Fu1" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="124" y="411" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="CDr-x1-nRQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="0Dk-m3-9Bz"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PbW-Ky-fCh" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="228" y="411" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="2EB-Wk-qBf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="3"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="VsH-7P-9fr"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGa-N0-qFe" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="436" y="411" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="NKi-sa-YFo">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="s0R-Aw-UB8"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e7u-Wu-K31" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="540" y="411" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="0ZE-ey-5YJ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="6"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="gBl-h4-668"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="49N-4J-Bbm" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="644" y="411" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="3so-zu-GGv">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="7"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="e8v-fe-GVi"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2h-Uh-PNX" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="748" y="411" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="wJH-0C-L3i">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="8"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="zAp-YW-HPh"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upM-Pm-0SF" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="852" y="411" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="rFs-VH-0vT">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="9"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="OWl-Wn-3rZ"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="db7-8l-txH" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="956" y="411" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="c9o-Ax-1A1">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="0"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="kVA-oo-9KC"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ITw-7F-PpP" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="1060" y="411" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="HpH-E0-Dpy">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="["/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="rz2-zb-j8z"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HSB-Hm-CiQ" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="332" y="307" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="IJw-VY-8DS">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="r"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="ibZ-bF-uJh"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="onK-4m-F9o" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="20" y="307" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="cQt-27-9cH">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="q"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="igW-kq-X3l"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QT4-Na-kBr" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="124" y="307" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="VEk-KX-cHS">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="w"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="oOU-LB-oqH"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="doE-24-aNU" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="228" y="307" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="v5a-FV-agM">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="e"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="Ei7-Vk-zt4"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bl8-K0-VTC" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="436" y="307" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="SMM-bD-PUX">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="t"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="SVX-4t-LcE"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QaZ-bo-6Y8" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="540" y="307" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="kWR-0o-qha">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="y"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="QWe-PL-VxQ"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8G6-vi-SVg" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="644" y="307" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="Qdm-tm-gQa">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="u"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="vYj-xq-fHA"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A71-Z4-Wrf" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="748" y="307" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="LKC-ge-dRH">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="i"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="X8o-S0-4NX"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gxQ-Ef-X85" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="852" y="307" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="ybg-cS-2GI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="o"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="9GS-Uv-OQr"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qSo-ji-Yeb" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="956" y="307" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="LXv-Ka-Qn8">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="p"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="85q-LD-VyT"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dlp-FM-DgY" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="1060" y="307" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="c4h-SN-TrC">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="["/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="AH8-gO-gIc"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kAX-bL-9KB" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="332" y="99" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="aja-VE-qA3">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="v"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="3p4-rs-dCE"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E0x-Zm-xMW" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="20" y="99" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="nmn-TZ-8QN">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="z"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="Tnn-HU-9kw"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Uj-kA-BqA" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="124" y="99" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="TY9-Pc-wyI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="x"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="zNs-RR-BWf"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dm6-i4-2E2" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="228" y="99" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="MVt-e4-Zes">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="c"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="c2N-Dx-vlb"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xc1-pU-KaH" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="436" y="99" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="PEv-xy-Zcc">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="b"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="Wpj-Ng-YXt"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k1R-Cd-yBB" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="540" y="99" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="IxF-m7-9zi">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="n"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="fR5-uR-QOm"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gt-5o-QE8" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="644" y="99" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="pdI-1J-X4Q">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="m"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="Hp7-7R-p1x"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qy3-p2-kek" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="748" y="99" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="rwe-bX-ttW">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value=","/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="aM3-Ja-8R1"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yaB-Yb-TFK" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="852" y="99" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="zVv-Qa-aYR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="."/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="mtX-eW-LHw"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e5q-FS-J7g" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="956" y="99" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="lKr-6J-T0D">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="/"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="vms-Dq-pPi"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vdf-Og-zrW" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
+                                <rect key="frame" x="332" y="203" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="✖︎" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="3Gu-fA-G3u">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="AndaleMono"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="f"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteApp:" target="XfG-lQ-9wD" id="cNF-yb-WRa"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>

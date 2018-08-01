@@ -18,6 +18,7 @@
 		DEC2690C2110AA2B00219B49 /* ListOfApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690B2110AA2B00219B49 /* ListOfApps.swift */; };
 		DEC2690E2110CBF300219B49 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690D2110CBF300219B49 /* VisualEffectView.swift */; };
 		DEC269102110FAF100219B49 /* CustomizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690F2110FAF100219B49 /* CustomizeButton.swift */; };
+		DEC269122111ADAD00219B49 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC269112111ADAD00219B49 /* CloseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		DEC2690B2110AA2B00219B49 /* ListOfApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfApps.swift; sourceTree = "<group>"; };
 		DEC2690D2110CBF300219B49 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		DEC2690F2110FAF100219B49 /* CustomizeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeButton.swift; sourceTree = "<group>"; };
+		DEC269112111ADAD00219B49 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				DEC2690921109B7E00219B49 /* CustomizeViewController.swift */,
 				DE8B795221103B1500B0D8BD /* Assets.xcassets */,
 				DE8B795421103B1500B0D8BD /* Main.storyboard */,
+				DEC269112111ADAD00219B49 /* CloseButton.swift */,
 				DEC2690D2110CBF300219B49 /* VisualEffectView.swift */,
 				DE8B796021103D3500B0D8BD /* TODO */,
 				DE8B795E21103D0300B0D8BD /* Button.swift */,
@@ -158,6 +161,7 @@
 				DEC2690C2110AA2B00219B49 /* ListOfApps.swift in Sources */,
 				DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */,
 				DEC2690E2110CBF300219B49 /* VisualEffectView.swift in Sources */,
+				DEC269122111ADAD00219B49 /* CloseButton.swift in Sources */,
 				DE8B795F21103D0300B0D8BD /* Button.swift in Sources */,
 				DE8B794F21103B1400B0D8BD /* AppDelegate.swift in Sources */,
 				DEC2690A21109B7E00219B49 /* CustomizeViewController.swift in Sources */,

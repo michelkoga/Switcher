@@ -23,6 +23,9 @@ class ViewController: NSViewController {
 	@IBOutlet weak var buttonSemicolon: Button!
 	@IBOutlet weak var buttonQuote: Button!
 	
+	
+	
+	
 	enum LaunchAppError: Error {
 		case invalidApp
 	}
@@ -92,6 +95,13 @@ class ViewController: NSViewController {
 		if UserDefaults.standard.bool(forKey: "appChanged") == true {
 			UserDefaults.standard.set(false, forKey: "appChanged")
 		}
+		for case let closeButton as CloseButton in self.view.subviews {
+			if UserDefaults.standard.bool(forKey: "customizeMode") == true {
+				closeButton.isHidden = false
+			} else {
+				closeButton.isHidden = true
+			}
+		}
 	}
 	override var representedObject: Any? {
 		didSet {
@@ -110,6 +120,17 @@ class ViewController: NSViewController {
 	func displayCustomizeSheet() {
 		self.presentViewControllerAsSheet(customizeViewController)
 	}
+	// Delete Action Button:
+	@IBAction func deleteApp(_ sender: CloseButton) {
+		for case let button as Button in self.view.subviews {
+			if button.character == sender.relatedButton {
+				button.image = nil
+				button.appName = ""
+				UserDefaults.standard.set("", forKey: button.character)
+			}
+		}
+	}
+	
 	// MARK: Functions
 	func launchApp(withCharacter character: String) {
 		if UserDefaults.standard.bool(forKey: "customizeMode") == false {

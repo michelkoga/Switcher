@@ -2,6 +2,7 @@ DOING:
 - Don't forget commit
 
 TODO:
+- create a delete x corner
 - If there is no app, do nothing or hide? (no momento, hide)
 - Make a better show mode for customize sheet
 - Preferences Window
