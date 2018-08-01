@@ -1,8 +1,14 @@
 DOING:
-- Create a refresh menu item in the icon menu
+- More keys
 
 TODO:
 - Make a better show mode for customize sheet
+- Preferences Window
+	- Number of rows?
+	- Show key characters
+- Controls (Volume, brightness, etc)
+- More design improvements
+	- round corners
 
 DONE:
 - Create an keyName Button
@@ -17,3 +23,4 @@ else -> launch App
 - Create change app system
 - Make translucent
 - make a nice icon
+- Create a refresh menu item in the icon menu
