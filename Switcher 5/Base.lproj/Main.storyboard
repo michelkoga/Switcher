@@ -1359,7 +1359,7 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="222-OT-9E3" customClass="Button" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="1060" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="xJN-mW-2BF">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="edit" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="xJN-mW-2BF">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -1368,7 +1368,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="customize"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonPressed:" target="XfG-lQ-9wD" id="x4X-m9-BwP"/>
+                                    <action selector="toggleCustomizeMode:" target="XfG-lQ-9wD" id="njh-oI-4bj"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAq-HH-R1G" customClass="CloseButton" customModule="Switcher_5" customModuleProvider="target">
@@ -2688,6 +2688,7 @@ Gw
         <image name="Volume Down" width="480" height="480"/>
         <image name="Volume Up" width="480" height="480"/>
         <image name="Xcode-beta" width="480" height="480"/>
+        <image name="edit" width="1024" height="1024"/>
         <image name="iBooks" width="480" height="480"/>
         <image name="iTunes" width="480" height="480"/>
     </resources>

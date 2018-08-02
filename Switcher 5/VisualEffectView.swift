@@ -7,13 +7,16 @@
 //
 
 import Cocoa
+// Doesn't work
 class VisualEffectView: NSVisualEffectView {
 
     override func draw(_ dirtyRect: NSRect) {
+		self.wantsLayer = true
         super.draw(dirtyRect)
 		self.material = .dark
 		self.state = .active
 		self.window?.contentView?.addSubview(self)
+		self.layer?.cornerRadius = 15
 		
     }
     

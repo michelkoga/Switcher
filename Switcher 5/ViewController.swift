@@ -145,6 +145,13 @@ class ViewController: NSViewController {
 			}
 		}
 	}
+	@IBAction func toggleCustomizeMode(_ sender: Any) {
+		if UserDefaults.standard.bool(forKey: "customizeMode") {
+			UserDefaults.standard.set(false, forKey: "customizeMode")
+		} else {
+			UserDefaults.standard.set(true, forKey: "customizeMode")
+		}
+	}
 	
 	// MARK: Functions
 	func launchApp(withCharacter character: String) {
