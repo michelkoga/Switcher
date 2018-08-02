@@ -1659,7 +1659,7 @@
                                     <font key="font" size="13" name="AndaleMono"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="["/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="relatedButton" value="-"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="deleteApp:" target="XfG-lQ-9wD" id="rz2-zb-j8z"/>
