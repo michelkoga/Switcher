@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE77326C21133B110006A5EB /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77326B21133B110006A5EB /* Controls.swift */; };
 		DE8B794F21103B1400B0D8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B794E21103B1400B0D8BD /* AppDelegate.swift */; };
 		DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B795021103B1400B0D8BD /* ViewController.swift */; };
 		DE8B795321103B1500B0D8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8B795221103B1500B0D8BD /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE77326B21133B110006A5EB /* Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
 		DE8B794B21103B1400B0D8BD /* Switcher 5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Switcher 5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8B794E21103B1400B0D8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE8B795021103B1400B0D8BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				DEC2690921109B7E00219B49 /* CustomizeViewController.swift */,
 				DE8B795221103B1500B0D8BD /* Assets.xcassets */,
 				DE8B795421103B1500B0D8BD /* Main.storyboard */,
+				DE77326B21133B110006A5EB /* Controls.swift */,
 				DEC269332112ABB500219B49 /* View.swift */,
 				DEC2690D2110CBF300219B49 /* VisualEffectView.swift */,
 				DE8B796021103D3500B0D8BD /* TODO */,
@@ -123,6 +126,11 @@
 					DE8B794A21103B1400B0D8BD = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -168,6 +176,7 @@
 				DEC2690E2110CBF300219B49 /* VisualEffectView.swift in Sources */,
 				DEC269122111ADAD00219B49 /* CloseButton.swift in Sources */,
 				DE8B795F21103D0300B0D8BD /* Button.swift in Sources */,
+				DE77326C21133B110006A5EB /* Controls.swift in Sources */,
 				DE8B794F21103B1400B0D8BD /* AppDelegate.swift in Sources */,
 				DEC2690A21109B7E00219B49 /* CustomizeViewController.swift in Sources */,
 				DEC2690821105B8E00219B49 /* Window.swift in Sources */,
@@ -306,7 +315,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Switcher 5/Switcher_5.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5WHWWFJXK9;
@@ -325,7 +333,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Switcher 5/Switcher_5.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5WHWWFJXK9;

@@ -157,9 +157,14 @@ class ViewController: NSViewController {
 		if UserDefaults.standard.bool(forKey: "customizeMode") == false {
 			if UserDefaults.standard.contains(key: character) {
 				let appName = UserDefaults.standard.string(forKey: character)
-				NSApp.hide(nil)
-				if !NSWorkspace.shared.launchApplication(appName!) {
-					print("Couldn't open App: \(appName!)")
+				if (appName?.isController)! {
+					executeControl(with: appName!)
+					NSApp.hide(nil)
+				} else {
+					NSApp.hide(nil)
+					if !NSWorkspace.shared.launchApplication(appName!) {
+						print("Couldn't open App: \(appName!)")
+					}
 				}
 			} else {
 				print("User Defaults doesn't contains value for \(character)")
@@ -181,6 +186,7 @@ class ViewController: NSViewController {
 			
 		}
 	}
+	
 }
 extension UserDefaults {
 	func contains(key: String) -> Bool {
