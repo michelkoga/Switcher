@@ -721,7 +721,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Finder"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="1"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -736,7 +735,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Terminal"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="2"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -751,7 +749,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Day One"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="3"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -794,7 +791,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Bear"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="6"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -809,7 +805,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Safari"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="7"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -824,7 +819,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Xcode"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="8"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -839,7 +833,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Sublime Text"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="9"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -854,7 +847,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Notes"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="0"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -869,7 +861,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Dictionary"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="-"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -884,7 +875,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Finder"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="q"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -899,7 +889,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Terminal"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="w"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -914,7 +903,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Day One"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="e"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -929,7 +917,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="UlyssesMac"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="r"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -944,7 +931,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Pixelmator"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="t"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -959,7 +945,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Bear"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="y"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -974,7 +959,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Safari"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="u"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -989,7 +973,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Xcode"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="i"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1004,7 +987,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Sublime Text"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="o"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1019,7 +1001,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Notes"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="p"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1034,7 +1015,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Dictionary"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="["/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1049,7 +1029,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Finder"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="a"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1064,7 +1043,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Terminal"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="s"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1079,7 +1057,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Day One"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="d"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1094,7 +1071,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="UlyssesMac"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="f"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1109,7 +1085,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Pixelmator"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="g"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1124,7 +1099,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Bear"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="h"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1139,7 +1113,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Safari"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="j"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1154,7 +1127,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Xcode"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="k"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1169,7 +1141,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Sublime Text"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="l"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1184,7 +1155,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Notes"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value=";"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1199,7 +1169,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Dictionary"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="'"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1214,7 +1183,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Finder"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="z"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1229,7 +1197,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Terminal"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="x"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1244,7 +1211,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Day One"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="c"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1259,7 +1225,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="UlyssesMac"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="v"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1274,7 +1239,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Pixelmator"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="b"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1289,7 +1253,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Bear"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="n"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1304,7 +1267,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Safari"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="m"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1319,7 +1281,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Xcode"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value=","/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1334,7 +1295,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Sublime Text"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="."/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1349,7 +1309,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Notes"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="/"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1364,7 +1323,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="appName" value="Dictionary"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="character" value="customize"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>

@@ -11,7 +11,6 @@ import Cocoa
 class Button: NSButton {
 	
 	@IBInspectable var character: String = ""
-	@IBInspectable var appName: String = ""
 	
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)

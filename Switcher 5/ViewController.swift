@@ -140,7 +140,6 @@ class ViewController: NSViewController {
 		for case let button as Button in self.view.subviews {
 			if button.character == sender.relatedButton {
 				button.image = nil
-				button.appName = ""
 				UserDefaults.standard.set("", forKey: button.character)
 			}
 		}
