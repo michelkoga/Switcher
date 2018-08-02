@@ -8,5 +8,5 @@
 
 import Foundation
 class List {
-	let apps = ["Activity Monitor","Affinity Photo", "App Store", "Bear", "Calculator", "Calendar", "Day One", "Dictionary", "Finder", "iBooks", "iTunes", "Keynote", "Kindle", "LINE", "Mail", "Maps", "Messages", "Notes", "Numbers", "OmniFocus", "Pages", "Photos", "Pixelmator", "Preview", "Reminders", "Safari", "Stikies", "Sublime Text", "System Preferences", "Terminal", "TextEdit"]
+//	let apps = ["Activity Monitor","Affinity Photo", "App Store", "Bear", "Calculator", "Calendar", "Day One", "Dictionary", "Finder", "iBooks", "iTunes", "Keynote", "Kindle", "LINE", "Mail", "Maps", "Messages", "Notes", "Numbers", "OmniFocus", "Pages", "Photos", "Pixelmator", "Preview", "Reminders", "Safari", "Stikies", "Sublime Text", "System Preferences", "Terminal", "TextEdit"]
 }

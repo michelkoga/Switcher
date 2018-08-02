@@ -29,4 +29,10 @@ class CustomizeViewController: NSViewController {
 //
 //		}
 //	}
+	@IBAction func removeApp(_ sender: NSButton) {
+		let character = UserDefaults.standard.string(forKey: "chosenKey")
+		UserDefaults.standard.set("", forKey: character!)
+		UserDefaults.standard.set(true, forKey: "appChanged")
+		self.dismissViewController(self)
+	}
 }

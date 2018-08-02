@@ -70,7 +70,22 @@ class ViewController: NSViewController {
 		}
 		
 		NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
-			self.launchApp(withCharacter: $0.characters!)
+			if UserDefaults.standard.bool(forKey: "customizeMode") == false {
+				if $0.keyCode == 53 {
+					NSApp.deactivate()
+					NSApp.hide(nil)
+				} else {
+					let character = $0.characters!
+					self.launchApp(withCharacter: character)
+				}
+			} else { // customizeMode is true:
+				if $0.keyCode == 53 {
+					UserDefaults.standard.set("false", forKey: "customizeMode")
+				} else {
+					let character = $0.characters!
+					self.launchApp(withCharacter: character)
+				}
+			}
 			return nil
 		}
 		UserDefaults.standard.set(false, forKey: "customizeMode")
@@ -146,8 +161,17 @@ class ViewController: NSViewController {
 				NSApp.hide(nil)
 			}
 		} else {
-			UserDefaults.standard.set(character, forKey: "chosenKey")
-			displayCustomizeSheet()
+			// This will avoid set applications in modifiers, esc, tab and keys I dont want to set:
+			switch character {
+			case "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
+				 "0","1","2","3","4","5","6","7","8","9",
+				 "-","[",";","'",",",".","/":
+				UserDefaults.standard.set(character, forKey: "chosenKey")
+				displayCustomizeSheet()
+			default:
+				
+				break
+			}
 			
 		}
 	}

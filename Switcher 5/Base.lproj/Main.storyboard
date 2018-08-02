@@ -2001,6 +2001,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="1180" height="597"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <visualEffectView fixedFrame="YES" blendingMode="behindWindow" material="selection" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="PG3-BF-GNc">
+                                <rect key="frame" x="0.0" y="-16" width="1180" height="629"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </visualEffectView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tku-61-Zfa">
+                                <rect key="frame" x="382" y="13" width="117" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Remove App" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kHk-Om-DrS">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="removeApp:" target="443-wp-bPm" id="8a5-OH-UD8"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-Sn-0g9">
+                                <rect key="frame" x="535" y="13" width="111" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="xX4-KU-g0I">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="dismissController:" target="443-wp-bPm" id="m4a-mF-EuC"/>
+                                </connections>
+                            </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAW-ap-4cf" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
                                 <rect key="frame" x="20" y="477" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -2604,24 +2633,6 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="setApp:" target="443-wp-bPm" id="KJT-rB-Jgl"/>
-                                </connections>
-                            </button>
-                            <visualEffectView fixedFrame="YES" blendingMode="behindWindow" material="selection" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="PG3-BF-GNc">
-                                <rect key="frame" x="0.0" y="-16" width="1180" height="629"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </visualEffectView>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-Sn-0g9">
-                                <rect key="frame" x="535" y="13" width="111" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="xX4-KU-g0I">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent" base64-UTF8="YES">
-Gw
-</string>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="dismissController:" target="443-wp-bPm" id="m4a-mF-EuC"/>
                                 </connections>
                             </button>
                         </subviews>
