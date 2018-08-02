@@ -18,7 +18,7 @@ class CustomizeViewController: NSViewController {
 		let character = UserDefaults.standard.string(forKey: "chosenKey")
 		UserDefaults.standard.set(sender.image?.name(), forKey: character!)
 		UserDefaults.standard.set(true, forKey: "appChanged")
-		self.dismissViewController(self)
+		self.dismiss(self)
 	}
 //	fileprivate func drawButtons() {
 //		for case let button as CustomizeButton in self.view.subviews {
@@ -33,6 +33,6 @@ class CustomizeViewController: NSViewController {
 		let character = UserDefaults.standard.string(forKey: "chosenKey")
 		UserDefaults.standard.set("", forKey: character!)
 		UserDefaults.standard.set(true, forKey: "appChanged")
-		self.dismissViewController(self)
+		self.dismiss(self)
 	}
 }

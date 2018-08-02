@@ -18,7 +18,7 @@ class Button: NSButton {
 		if self.tag == 1 || self.tag == 2 {
 			let jfKeyBumps = NSBezierPath()
 			jfKeyBumps.lineWidth = 6
-			jfKeyBumps.lineCapStyle = NSBezierPath.LineCapStyle.roundLineCapStyle
+			jfKeyBumps.lineCapStyle = NSBezierPath.LineCapStyle.round
 			jfKeyBumps.move(to: CGPoint(x: 40, y: 96))
 			jfKeyBumps.line(to: CGPoint(x: 60, y: 96))
 			NSColor.init(calibratedWhite: 0.9, alpha: 0.8).setStroke()

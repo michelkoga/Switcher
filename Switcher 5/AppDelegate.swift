@@ -17,7 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		UserDefaults.standard.addObserver(self, forKeyPath: "customizeMode", options: NSKeyValueObservingOptions.new, context: nil)
 		// initialize icon status bar button
 		if let button = statusItem.button {
-			button.image = NSImage(named:NSImage.Name("switcherMenubarIcon"))
+			button.image = NSImage(named:"switcherMenubarIcon")
 		}
 		constructMenu()
 	}

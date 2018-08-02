@@ -34,7 +34,7 @@ class ViewController: NSViewController {
 		for case let button as Button in self.view.subviews {
 			if UserDefaults.standard.contains(key: button.character) {
 				let appName = UserDefaults.standard.string(forKey: button.character)
-				button.image = NSImage(named: NSImage.Name(rawValue: appName!))
+				button.image = NSImage(named: appName!)
 			}
 			if UserDefaults.standard.bool(forKey: "customizeMode") == true {
 				//button.isBordered = true
@@ -130,10 +130,10 @@ class ViewController: NSViewController {
 	}
 	// MARK: display customize View Controller:
 	lazy var customizeViewController: CustomizeViewController = {
-		return self.storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "customizeView")) as! NSViewController
+		return self.storyboard!.instantiateController(withIdentifier: "customizeView") as! NSViewController
 		}() as! CustomizeViewController
 	func displayCustomizeSheet() {
-		self.presentViewControllerAsSheet(customizeViewController)
+		self.presentAsSheet(customizeViewController)
 	}
 	// Delete Action Button:
 	@IBAction func deleteApp(_ sender: CloseButton) {
