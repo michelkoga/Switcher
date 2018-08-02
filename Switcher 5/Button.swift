@@ -35,13 +35,12 @@ class Button: NSButton {
     }
 	// (M)Tracking Mouse:
 	override func mouseEntered(with event: NSEvent) {
-		if UserDefaults.standard.bool(forKey: "customizeMode") {
-			self.layer?.backgroundColor = NSColor.red.cgColor
-		} else {
-			self.layer?.backgroundColor = CGColor.init(gray: 0.2, alpha: 0.3)
-		}
+		self.layer?.backgroundColor = CGColor.init(gray: 0.2, alpha: 0.3)
 	}
 	override func mouseExited(with event: NSEvent) {
 		self.layer?.backgroundColor = CGColor.clear
+	}
+	override func mouseMoved(with event: NSEvent) {
+		print("Moved")
 	}
 }

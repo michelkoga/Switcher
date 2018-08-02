@@ -1998,40 +1998,15 @@
             <objects>
                 <viewController storyboardIdentifier="customizeView" id="443-wp-bPm" customClass="CustomizeViewController" customModule="Switcher_5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="mFv-zY-RQG">
-                        <rect key="frame" x="0.0" y="0.0" width="1180" height="597"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1180" height="556"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <visualEffectView fixedFrame="YES" blendingMode="behindWindow" material="selection" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="PG3-BF-GNc">
-                                <rect key="frame" x="0.0" y="-16" width="1180" height="629"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1180" height="556"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </visualEffectView>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tku-61-Zfa">
-                                <rect key="frame" x="382" y="13" width="117" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Remove App" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kHk-Om-DrS">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="removeApp:" target="443-wp-bPm" id="8a5-OH-UD8"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-Sn-0g9">
-                                <rect key="frame" x="535" y="13" width="111" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="xX4-KU-g0I">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent" base64-UTF8="YES">
-Gw
-</string>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="dismissController:" target="443-wp-bPm" id="m4a-mF-EuC"/>
-                                </connections>
-                            </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAW-ap-4cf" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="20" y="477" width="100" height="100"/>
+                                <rect key="frame" x="20" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Activity Monitor" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="a6Z-Nj-r4o">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2042,7 +2017,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2Q-vm-51r" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="124" y="477" width="100" height="100"/>
+                                <rect key="frame" x="124" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Affinity Photo" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="C8d-Z9-Mme">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2053,7 +2028,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJ5-Om-Xle" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="228" y="477" width="100" height="100"/>
+                                <rect key="frame" x="228" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="App Store" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="7ab-5i-ACs">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2064,7 +2039,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGA-VB-ZvG" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="332" y="477" width="100" height="100"/>
+                                <rect key="frame" x="332" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Bear" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Qk4-Iy-iNW">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2075,7 +2050,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmx-bn-kzt" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="436" y="477" width="100" height="100"/>
+                                <rect key="frame" x="436" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Calculator" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="RMy-9Q-88d">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2086,7 +2061,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xar-06-91U" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="540" y="477" width="100" height="100"/>
+                                <rect key="frame" x="540" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Calendar" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="vyF-8g-D0u">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2097,7 +2072,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ulV-aZ-Ymh" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="644" y="477" width="100" height="100"/>
+                                <rect key="frame" x="644" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Day One" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Bbh-FE-KUQ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2108,7 +2083,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20p-hP-TFO" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="748" y="477" width="100" height="100"/>
+                                <rect key="frame" x="748" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Dictionary" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="WFR-qQ-UOR">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2119,7 +2094,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RUE-Cq-tjA" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="852" y="477" width="100" height="100"/>
+                                <rect key="frame" x="852" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Finder" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fy9-DW-axb">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2130,7 +2105,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-JU-m64" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="956" y="477" width="100" height="100"/>
+                                <rect key="frame" x="956" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Keynote" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="sx5-Am-2pB">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2141,7 +2116,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Or-Sb-Qit" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="1060" y="477" width="100" height="100"/>
+                                <rect key="frame" x="1060" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Kindle" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0fF-gO-cUX">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2152,7 +2127,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hq3-w7-HJU" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="20" y="373" width="100" height="100"/>
+                                <rect key="frame" x="20" y="332" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LINE" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="bY4-l1-6da">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2163,7 +2138,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yex-YP-VHE" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="124" y="373" width="100" height="100"/>
+                                <rect key="frame" x="124" y="332" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Mail" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="w6V-Dt-3d1">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2174,7 +2149,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVh-Tm-PNp" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="228" y="373" width="100" height="100"/>
+                                <rect key="frame" x="228" y="332" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Maps" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ve9-bw-zKd">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2185,7 +2160,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPV-MK-v1A" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="332" y="373" width="100" height="100"/>
+                                <rect key="frame" x="332" y="332" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Messages" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="GJt-Ff-BdT">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2196,7 +2171,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rk1-XI-9Mj" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="436" y="373" width="100" height="100"/>
+                                <rect key="frame" x="436" y="332" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Notes" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="cfa-IN-2M1">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2207,7 +2182,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXa-Zc-O18" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="540" y="373" width="100" height="100"/>
+                                <rect key="frame" x="540" y="332" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Numbers" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Twc-GB-WDS">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2218,7 +2193,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Jc-JA-OW1" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="644" y="373" width="100" height="100"/>
+                                <rect key="frame" x="644" y="332" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="OmniFocus" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="4d5-4f-6Vh">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2229,7 +2204,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zxJ-19-EC2" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="748" y="373" width="100" height="100"/>
+                                <rect key="frame" x="748" y="332" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Pages" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ItI-MU-eXR">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2240,7 +2215,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yV3-Wc-f28" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="852" y="373" width="100" height="100"/>
+                                <rect key="frame" x="852" y="332" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Photos" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="VGn-Rc-ttl">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2251,7 +2226,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="klk-Og-8Kt" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="956" y="373" width="100" height="100"/>
+                                <rect key="frame" x="956" y="332" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Pixelmator" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="yQh-dy-2xg">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2262,7 +2237,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Fl-qj-Gph" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="1060" y="373" width="100" height="100"/>
+                                <rect key="frame" x="1060" y="332" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Preview" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ggO-Sw-CaR">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2273,7 +2248,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eYU-lf-dbA" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="20" y="269" width="100" height="100"/>
+                                <rect key="frame" x="20" y="228" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Reminders" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="IxA-3f-K1N">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2284,7 +2259,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XfO-q1-Mia" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="124" y="269" width="100" height="100"/>
+                                <rect key="frame" x="124" y="228" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Safari" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="MPb-u5-X5h">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2295,7 +2270,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y83-b3-esp" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="228" y="269" width="100" height="100"/>
+                                <rect key="frame" x="228" y="228" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Stickies" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="nB0-tq-SG6">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2306,7 +2281,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s0u-dB-T0j" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="332" y="269" width="100" height="100"/>
+                                <rect key="frame" x="332" y="228" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Sublime Text" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Zv2-Y3-JyM">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2317,7 +2292,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLj-te-FuH" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="436" y="269" width="100" height="100"/>
+                                <rect key="frame" x="436" y="228" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="System Preferences" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="rsp-nU-TIN">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2328,7 +2303,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iiO-9f-M6a" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="540" y="269" width="100" height="100"/>
+                                <rect key="frame" x="540" y="228" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Terminal" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="AT5-jO-EJm">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2339,7 +2314,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Sd-SK-GmW" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="644" y="269" width="100" height="100"/>
+                                <rect key="frame" x="644" y="228" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="TextEdit" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="WCD-mI-r7x">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2350,7 +2325,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-DC-KQu" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="748" y="269" width="100" height="100"/>
+                                <rect key="frame" x="748" y="228" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="UlyssesMac" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fM3-aC-fC9">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2361,7 +2336,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNF-FW-hkH" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="852" y="269" width="100" height="100"/>
+                                <rect key="frame" x="852" y="228" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Xcode-beta" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Gv3-NM-jrv">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2372,7 +2347,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OnM-nr-EL8" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="956" y="269" width="100" height="100"/>
+                                <rect key="frame" x="956" y="228" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="iBooks" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="nkk-SI-K4V">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2383,7 +2358,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PTE-aB-NgE" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="1060" y="269" width="100" height="100"/>
+                                <rect key="frame" x="1060" y="228" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="iTunes" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="CGb-ib-b3G">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2394,7 +2369,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F1B-YC-c0B" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="20" y="165" width="100" height="100"/>
+                                <rect key="frame" x="20" y="124" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Rewind" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="dOK-mW-Dx0">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2405,7 +2380,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yDI-Ri-VYE" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="124" y="165" width="100" height="100"/>
+                                <rect key="frame" x="124" y="124" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Play or Pause" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jW2-4b-SfX">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2416,7 +2391,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cb3-JK-Mks" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="228" y="165" width="100" height="100"/>
+                                <rect key="frame" x="228" y="124" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Fastforward" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="5kI-WF-2Ux">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2427,7 +2402,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NXf-0Z-V7b" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="332" y="165" width="100" height="100"/>
+                                <rect key="frame" x="332" y="124" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="tcw-o6-g66">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2438,7 +2413,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zco-Pg-9id" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="436" y="165" width="100" height="100"/>
+                                <rect key="frame" x="436" y="124" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="NbF-yt-tVM">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2449,7 +2424,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pa9-ze-rhz" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="540" y="165" width="100" height="100"/>
+                                <rect key="frame" x="540" y="124" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ZsT-2G-7yj">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2460,7 +2435,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nk7-0e-G63" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="644" y="165" width="100" height="100"/>
+                                <rect key="frame" x="644" y="124" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="V2y-hs-PBL">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2471,7 +2446,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVh-4T-SZ0" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="748" y="165" width="100" height="100"/>
+                                <rect key="frame" x="748" y="124" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="4jn-uC-XRg">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2482,7 +2457,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6x-87-Tdp" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="852" y="165" width="100" height="100"/>
+                                <rect key="frame" x="852" y="124" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="S2R-fW-sLZ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2493,7 +2468,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQs-Dz-Lya" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="956" y="165" width="100" height="100"/>
+                                <rect key="frame" x="956" y="124" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="TUy-Rd-yRf">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2504,7 +2479,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehM-Wy-rRk" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="1060" y="165" width="100" height="100"/>
+                                <rect key="frame" x="1060" y="124" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="uo9-Sk-Niu">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2515,7 +2490,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TNp-nn-A2h" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="20" y="61" width="100" height="100"/>
+                                <rect key="frame" x="20" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Brightness Down" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="3tM-tv-zKn">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2526,7 +2501,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soD-fr-0OV" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="124" y="61" width="100" height="100"/>
+                                <rect key="frame" x="124" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Brightness Up" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="oet-sb-aGe">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2537,7 +2512,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HAu-oq-v2Q" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="228" y="61" width="100" height="100"/>
+                                <rect key="frame" x="228" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Dashboard" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="oo0-JO-b8G">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2548,7 +2523,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKE-zR-tMj" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="332" y="61" width="100" height="100"/>
+                                <rect key="frame" x="332" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Input Sources" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="21G-dc-DAb">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2559,7 +2534,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ABU-7n-4AE" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="436" y="61" width="100" height="100"/>
+                                <rect key="frame" x="436" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Key Brightness Down" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Yrw-vP-SRR">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2570,7 +2545,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cV-Ke-MKc" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="540" y="61" width="100" height="100"/>
+                                <rect key="frame" x="540" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Key Brightness Up" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="zoK-dX-JXk">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2581,7 +2556,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jqe-R2-Xek" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="644" y="61" width="100" height="100"/>
+                                <rect key="frame" x="644" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Mute" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="khl-fD-C4M">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2592,7 +2567,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uG0-zK-p18" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="748" y="61" width="100" height="100"/>
+                                <rect key="frame" x="748" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Volume Down" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Phu-Zg-VaK">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2603,7 +2578,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWK-Cm-Z7v" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="852" y="61" width="100" height="100"/>
+                                <rect key="frame" x="852" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Volume Up" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="qxM-Di-WbD">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2614,7 +2589,7 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32M-pq-9c3" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="956" y="61" width="100" height="100"/>
+                                <rect key="frame" x="956" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Sleep" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="kg1-q4-HYO">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2625,14 +2600,14 @@ Gw
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-OV-xhJ" customClass="CustomizeButton" customModule="Switcher_5" customModuleProvider="target">
-                                <rect key="frame" x="1060" y="61" width="100" height="100"/>
+                                <rect key="frame" x="1060" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="S8c-6E-n6Q">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="back" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="S8c-6E-n6Q">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="setApp:" target="443-wp-bPm" id="KJT-rB-Jgl"/>
+                                    <action selector="dismissModal:" target="443-wp-bPm" id="WqT-yl-J5Y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2640,7 +2615,7 @@ Gw
                 </viewController>
                 <customObject id="P9A-fV-Tzs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="1574.5"/>
+            <point key="canvasLocation" x="81" y="1554"/>
         </scene>
     </scenes>
     <resources>
@@ -2688,6 +2663,7 @@ Gw
         <image name="Volume Down" width="480" height="480"/>
         <image name="Volume Up" width="480" height="480"/>
         <image name="Xcode-beta" width="480" height="480"/>
+        <image name="back" width="1024" height="1024"/>
         <image name="edit" width="1024" height="1024"/>
         <image name="iBooks" width="480" height="480"/>
         <image name="iTunes" width="480" height="480"/>

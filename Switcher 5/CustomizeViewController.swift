@@ -21,10 +21,7 @@ class CustomizeViewController: NSViewController {
 		self.dismiss(self)
 	}
 	
-	@IBAction func removeApp(_ sender: NSButton) {
-		let character = UserDefaults.standard.string(forKey: "chosenKey")
-		UserDefaults.standard.set("", forKey: character!)
-		UserDefaults.standard.set(true, forKey: "appChanged")
+	@IBAction func dismissModal(_ sender: Any) {
 		self.dismiss(self)
 	}
 }
