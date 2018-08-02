@@ -1,16 +1,19 @@
+
+
 DOING:
 - Don't forget commit
+- Controls (Volume, brightness, etc)
 
 TODO:
-- create a delete x corner
-- If there is no app, do nothing or hide? (no momento, hide)
 - Make a better show mode for customize sheet
 - Preferences Window
 	- Number of rows?
 	- Show key characters
-- Controls (Volume, brightness, etc)
+	- Size
 - More design improvements
 	- round corners
+- Better clues for the position of the keys
+- If there is no app, do nothing or hide? (in the moment, hide)
 
 DONE:
 - Create an keyName Button
@@ -27,3 +30,7 @@ else -> launch App
 - make a nice icon
 - Create a refresh menu item in the icon menu
 - More keys (matrix 11 x 4)
+- create a delete x corner
+
+Observation:
+- Renaming class name breaks the project.

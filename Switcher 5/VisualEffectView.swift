@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-
 class VisualEffectView: NSVisualEffectView {
 
     override func draw(_ dirtyRect: NSRect) {

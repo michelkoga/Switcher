@@ -8,6 +8,7 @@
 
 import Cocoa
 
+// It's actually a Remove App Button
 class CloseButton: NSButton {
 	@IBInspectable var relatedButton: String = ""
     override func draw(_ dirtyRect: NSRect) {
