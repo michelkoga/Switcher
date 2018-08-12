@@ -11,6 +11,13 @@ import Cocoa
 class ViewController: NSViewController {
 	// MARK: Variables:
 	var preferences = UserDefaults.standard
+//	var customizeMode = "customizeMode"
+	enum customize: String {
+		case on = "true"
+		case off = "false"
+	}
+	
+//	enum preferences.
 	
 	@IBOutlet weak var buttonA: Button!
 	@IBOutlet weak var buttonS: Button!
@@ -33,11 +40,11 @@ class ViewController: NSViewController {
 	
 	fileprivate func drawButtons() {
 		for case let button as Button in self.view.subviews {
-			if UserDefaults.standard.contains(key: button.character) {
-				let appName = UserDefaults.standard.string(forKey: button.character)
+			if self.preferences.contains(key: button.character) {
+				let appName = preferences.string(forKey: button.character)
 				button.image = NSImage(named: appName!)
 			}
-			if UserDefaults.standard.bool(forKey: "customizeMode") == true {
+			if customizeMode == .on {
 				button.isBordered = true
 			} else {
 				button.isBordered = false
@@ -47,14 +54,21 @@ class ViewController: NSViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		// Test Custom enum
+//		customizeMod = .off
+//		let defaults = UserDefaults.standard.bool(forKey: "test")
+//		print(defaults)
+//		customizeMod = .on
+//		let defaults2 = UserDefaults.standard.bool(forKey: "test")
+//		print(defaults2)
 		let workspace = NSWorkspace()
 		let icon = workspace.icon(forFile: "/Applications/App Store.app/Contents/Resources/AppIcon.icns")
 		self.buttonA.image = icon
 		
 		// Observer (1) to redraw buttons when change customize mode
-		UserDefaults.standard.addObserver(self, forKeyPath: "customizeMode", options: NSKeyValueObservingOptions.new, context: nil)
+		preferences.addObserver(self, forKeyPath: "customizeMode", options: NSKeyValueObservingOptions.new, context: nil)
 		// Observer (2) to redraw buttons when app changed
-		UserDefaults.standard.addObserver(self, forKeyPath: "appChanged", options: NSKeyValueObservingOptions.new, context: nil)
+		preferences.addObserver(self, forKeyPath: "appChanged", options: NSKeyValueObservingOptions.new, context: nil)
 		NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) {
 			switch $0.modifierFlags.intersection(.deviceIndependentFlagsMask) {
 			case [.command, .option]:
@@ -68,14 +82,14 @@ class ViewController: NSViewController {
 			NSApp.hide(nil) // necessário
 		}
 		NSEvent.addGlobalMonitorForEvents(matching: .leftMouseUp) {_ in
-			if UserDefaults.standard.bool(forKey: "customizeMode") == false {
+			if self.customizeMode == .off {
 				NSApp.deactivate()
 				NSApp.hide(nil)
 			}
 		}
 		
 		NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
-			if UserDefaults.standard.bool(forKey: "customizeMode") == false {
+			if self.customizeMode == .off {
 				if $0.keyCode == 53 {
 					NSApp.deactivate()
 					NSApp.hide(nil)
@@ -85,7 +99,7 @@ class ViewController: NSViewController {
 				}
 			} else { // customizeMode is true:
 				if $0.keyCode == 53 {
-					UserDefaults.standard.set("false", forKey: "customizeMode")
+					self.customizeMode = .off
 				} else {
 					let character = $0.characters!
 					self.launchApp(withCharacter: character)
@@ -94,7 +108,7 @@ class ViewController: NSViewController {
 			return nil
 		}
 		
-		UserDefaults.standard.set(false, forKey: "customizeMode")
+		customizeMode = .off
 //		UserDefaults.standard.set("Finder", forKey: "a")
 //		UserDefaults.standard.set("Terminal", forKey: "o")
 //		UserDefaults.standard.set("Day One", forKey: "e")
@@ -113,11 +127,11 @@ class ViewController: NSViewController {
 	// When observer (1) observe change in customize mode user default, this function will start
 	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
 		drawButtons()
-		if UserDefaults.standard.bool(forKey: "appChanged") == true {
-			UserDefaults.standard.set(false, forKey: "appChanged")
+		if preferences.bool(forKey: "appChanged") == true {
+			preferences.set(false, forKey: "appChanged")
 		}
 		for case let closeButton as CloseButton in self.view.subviews {
-			if UserDefaults.standard.bool(forKey: "customizeMode") == true {
+			if customizeMode == .on {
 				closeButton.isHidden = false
 			} else {
 				closeButton.isHidden = true
@@ -146,23 +160,23 @@ class ViewController: NSViewController {
 		for case let button as Button in self.view.subviews {
 			if button.character == sender.relatedButton {
 				button.image = nil
-				UserDefaults.standard.set("", forKey: button.character)
+				preferences.set("", forKey: button.character)
 			}
 		}
 	}
 	@IBAction func toggleCustomizeMode(_ sender: Any) {
-		if UserDefaults.standard.bool(forKey: "customizeMode") {
-			UserDefaults.standard.set(false, forKey: "customizeMode")
+		if customizeMode == .on {
+			customizeMode = .off
 		} else {
-			UserDefaults.standard.set(true, forKey: "customizeMode")
+			customizeMode = .on
 		}
 	}
 	
 	// MARK: Functions
 	func launchApp(withCharacter character: String) {
-		if UserDefaults.standard.bool(forKey: "customizeMode") == false {
-			if UserDefaults.standard.contains(key: character) {
-				let appName = UserDefaults.standard.string(forKey: character)
+		if customizeMode == .off {
+			if preferences.contains(key: character) {
+				let appName = preferences.string(forKey: character)
 				if (appName?.isController)! {
 					executeControl(with: appName!)
 					NSApp.hide(nil)
@@ -183,7 +197,7 @@ class ViewController: NSViewController {
 			case "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
 				 "0","1","2","3","4","5","6","7","8","9",
 				 "-","[",";","'",",",".","/":
-				UserDefaults.standard.set(character, forKey: "chosenKey")
+				preferences.set(character, forKey: "chosenKey")
 				displayCustomizeSheet()
 			default:
 				
@@ -201,4 +215,5 @@ extension UserDefaults {
 	@objc dynamic var customizeMode: Bool {
 		return bool(forKey: "customizeMode")
 	}
+	
 }
