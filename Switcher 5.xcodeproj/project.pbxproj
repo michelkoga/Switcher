@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE33BB202116E970008849CF /* IconFilesSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE33BB1F2116E970008849CF /* IconFilesSearcher.swift */; };
 		DE77326C21133B110006A5EB /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77326B21133B110006A5EB /* Controls.swift */; };
 		DE8B794F21103B1400B0D8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B794E21103B1400B0D8BD /* AppDelegate.swift */; };
 		DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B795021103B1400B0D8BD /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE33BB1F2116E970008849CF /* IconFilesSearcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconFilesSearcher.swift; sourceTree = "<group>"; };
 		DE77326B21133B110006A5EB /* Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
 		DE8B794B21103B1400B0D8BD /* Switcher 5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Switcher 5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8B794E21103B1400B0D8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 		DEC2690F2110FAF100219B49 /* CustomizeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeButton.swift; sourceTree = "<group>"; };
 		DEC269112111ADAD00219B49 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		DEC269332112ABB500219B49 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		DEE2344321142EF80069A900 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 		DE8B794221103B1400B0D8BD = {
 			isa = PBXGroup;
 			children = (
+				DEE2344321142EF80069A900 /* Playground.playground */,
 				DE8B794D21103B1400B0D8BD /* Switcher 5 */,
 				DE8B794C21103B1400B0D8BD /* Products */,
 			);
@@ -73,6 +77,7 @@
 		DE8B794D21103B1400B0D8BD /* Switcher 5 */ = {
 			isa = PBXGroup;
 			children = (
+				DE33BB1F2116E970008849CF /* IconFilesSearcher.swift */,
 				DEC2690721105B8E00219B49 /* Window.swift */,
 				DE8B794E21103B1400B0D8BD /* AppDelegate.swift */,
 				DE8B795021103B1400B0D8BD /* ViewController.swift */,
@@ -173,6 +178,7 @@
 				DEC2690C2110AA2B00219B49 /* ListOfApps.swift in Sources */,
 				DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */,
 				DEC269342112ABB500219B49 /* View.swift in Sources */,
+				DE33BB202116E970008849CF /* IconFilesSearcher.swift in Sources */,
 				DEC2690E2110CBF300219B49 /* VisualEffectView.swift in Sources */,
 				DEC269122111ADAD00219B49 /* CloseButton.swift in Sources */,
 				DE8B795F21103D0300B0D8BD /* Button.swift in Sources */,

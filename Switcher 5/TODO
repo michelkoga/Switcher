@@ -1,7 +1,6 @@
 
 DOING:
 - Don't forget commit
-- Correct red remained in button
 - Build controls functionality (Volume, brightness, etc)
 - Control app size in myView
 
@@ -9,9 +8,10 @@ TODO:
 - Set shortcut (command, etc)
 - Make a better show mode for customize sheet
 - Preferences Window
-- Number of rows?
-- Show key characters
-- Size
+	- Number of rows?
+	- Show key characters
+	- Size
+	- Set Shortcut
 - More design improvements
 - round corners
 - Better clues for the position of the keys
@@ -38,3 +38,78 @@ else -> launch App
 Observation:
 - Renaming class name breaks the project.
 
+
+SUCCESS:
+2018/8/3
+- Found a way to get to all apps inside Applications folder
+- Found a way to get icons from Contents/Resources/***.icns
+
+Next:
+- Search for the icon (sometimes its not in the same place(?))
+- implemente an ImageTable with the icons of the possible apps
+
+
+
+
+- Icon Not found:
+QuickTime,
+Chess.app,
+UlyssesMac.app -> Why?
+Preview.app
+Dashboard.app
+iMovie.app
+TweetDeck.app
+iTranslate.app
+TextEdit.app
+Paper.app
+Scapple.app
+Safari.app
+Dictionary.app
+Contacts.app
+Kindle.app
+LINE.app
+Maps.app
+GarageBand.app
+Typeeto.app
+Stickies.app
+iTunes.app
+Launchpad.app
+Reminders.app
+Automator.app
+BetterTouchTool.app
+Calendar.app
+Sublime
+
+
+- Icons FoundIcon
+20Creator.app
+Pixelmator.app
+Rule of Three.app
+PhotoBoothIcon
+Jsonator.app
+Notes.app
+iBooks.app
+iBooks.app
+Switcher4
+Numbers.app
+Day One.app
+OmniFocus.app
+Magnet.app
+Affinity
+Keynote.app
+Bear.app
+Pages.app
+AirSync.app
+Momentum.app
+Photos.app
+Byword.app
+Messages.app
+KnightTouchBar2000
+Calculator.app
+duet.app
+QuadroSync.app
+Switcher
+OnScreen
+20Control.app
+Boom
+System Preferences.app

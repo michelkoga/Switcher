@@ -26,11 +26,6 @@ class Button: NSButton {
 		// (M)Tracking mouse:
 		let area = NSTrackingArea.init(rect: self.bounds, options: [.mouseEnteredAndExited, .activeAlways], owner: self, userInfo: nil)
 		self.addTrackingArea(area)
-		if UserDefaults.standard.bool(forKey: "customizeMode") {
-			self.layer?.backgroundColor = NSColor.red.cgColor
-		} else {
-			self.layer?.backgroundColor = CGColor.clear
-		}
     }
 	// (M)Tracking Mouse:
 	override func mouseEntered(with event: NSEvent) {

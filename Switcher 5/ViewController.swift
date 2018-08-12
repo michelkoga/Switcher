@@ -10,6 +10,7 @@ import Cocoa
 
 class ViewController: NSViewController {
 	// MARK: Variables:
+	var preferences = UserDefaults.standard
 	
 	@IBOutlet weak var buttonA: Button!
 	@IBOutlet weak var buttonS: Button!
@@ -46,6 +47,10 @@ class ViewController: NSViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		let workspace = NSWorkspace()
+		let icon = workspace.icon(forFile: "/Applications/App Store.app/Contents/Resources/AppIcon.icns")
+		self.buttonA.image = icon
+		
 		// Observer (1) to redraw buttons when change customize mode
 		UserDefaults.standard.addObserver(self, forKeyPath: "customizeMode", options: NSKeyValueObservingOptions.new, context: nil)
 		// Observer (2) to redraw buttons when app changed
@@ -88,6 +93,7 @@ class ViewController: NSViewController {
 			}
 			return nil
 		}
+		
 		UserDefaults.standard.set(false, forKey: "customizeMode")
 //		UserDefaults.standard.set("Finder", forKey: "a")
 //		UserDefaults.standard.set("Terminal", forKey: "o")

@@ -12,8 +12,8 @@ class CustomizeViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//		drawButtons()
     }
+	
 	@IBAction func setApp(_ sender: NSButton) {
 		let character = UserDefaults.standard.string(forKey: "chosenKey")
 		UserDefaults.standard.set(sender.image?.name(), forKey: character!)
