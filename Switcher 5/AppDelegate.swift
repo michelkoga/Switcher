@@ -22,20 +22,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		constructMenu()
 	}
 	@objc func customizeMode(_ sender: NSMenuItem) {
-		let customizeMode = UserDefaults.standard.bool(forKey: "customizeMode")
-		if customizeMode == false {
-			UserDefaults.standard.set(true, forKey: "customizeMode")
+//		let customizeMode = UserDefaults.standard.bool(forKey: "customizeMode")
+		if Preferences.customizeMode == .off {
+			Preferences.customizeMode = .on
 			sender.state = .on
 		} else {
-			UserDefaults.standard.set( false, forKey: "customizeMode")
+			Preferences.customizeMode = .off
 			sender.state = .off
 		}
 		
 	}
 	// When observer(1) observe change in customize mode user default, this function will start
 	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-		let isCustomizeMode = UserDefaults.standard.bool(forKey: "customizeMode")
-		if isCustomizeMode {
+		if Preferences.customizeMode == .on {
 			statusItem.menu?.items[0].state = .on // This is the first item in Menu
 		} else {
 			statusItem.menu?.items[0].state = .off

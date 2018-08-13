@@ -8,12 +8,12 @@
 
 import Foundation
 
-extension ViewController {
+class Preferences {
 	enum Custom {
 		case off
 		case on
 	}
-	var customizeMode: Custom {
+	static var customizeMode: Custom {
 		get {
 			if UserDefaults.standard.bool(forKey: "customizeMode") == true {
 				return .on

@@ -44,7 +44,7 @@ class ViewController: NSViewController {
 				let appName = preferences.string(forKey: button.character)
 				button.image = NSImage(named: appName!)
 			}
-			if customizeMode == .on {
+			if Preferences.customizeMode == .on {
 				button.isBordered = true
 			} else {
 				button.isBordered = false
@@ -82,14 +82,14 @@ class ViewController: NSViewController {
 			NSApp.hide(nil) // necessário
 		}
 		NSEvent.addGlobalMonitorForEvents(matching: .leftMouseUp) {_ in
-			if self.customizeMode == .off {
+			if Preferences.customizeMode == .off {
 				NSApp.deactivate()
 				NSApp.hide(nil)
 			}
 		}
 		
 		NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
-			if self.customizeMode == .off {
+			if Preferences.customizeMode == .off {
 				if $0.keyCode == 53 {
 					NSApp.deactivate()
 					NSApp.hide(nil)
@@ -99,7 +99,7 @@ class ViewController: NSViewController {
 				}
 			} else { // customizeMode is true:
 				if $0.keyCode == 53 {
-					self.customizeMode = .off
+					Preferences.customizeMode = .off
 				} else {
 					let character = $0.characters!
 					self.launchApp(withCharacter: character)
@@ -108,7 +108,7 @@ class ViewController: NSViewController {
 			return nil
 		}
 		
-		customizeMode = .off
+		Preferences.customizeMode = .off
 //		UserDefaults.standard.set("Finder", forKey: "a")
 //		UserDefaults.standard.set("Terminal", forKey: "o")
 //		UserDefaults.standard.set("Day One", forKey: "e")
@@ -131,7 +131,7 @@ class ViewController: NSViewController {
 			preferences.set(false, forKey: "appChanged")
 		}
 		for case let closeButton as CloseButton in self.view.subviews {
-			if customizeMode == .on {
+			if Preferences.customizeMode == .on {
 				closeButton.isHidden = false
 			} else {
 				closeButton.isHidden = true
@@ -165,16 +165,16 @@ class ViewController: NSViewController {
 		}
 	}
 	@IBAction func toggleCustomizeMode(_ sender: Any) {
-		if customizeMode == .on {
-			customizeMode = .off
+		if Preferences.customizeMode == .on {
+			Preferences.customizeMode = .off
 		} else {
-			customizeMode = .on
+			Preferences.customizeMode = .on
 		}
 	}
 	
 	// MARK: Functions
 	func launchApp(withCharacter character: String) {
-		if customizeMode == .off {
+		if Preferences.customizeMode == .off {
 			if preferences.contains(key: character) {
 				let appName = preferences.string(forKey: character)
 				if (appName?.isController)! {
