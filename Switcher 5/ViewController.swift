@@ -44,7 +44,7 @@ class ViewController: NSViewController {
 				let appName = preferences.string(forKey: button.character)
 				button.image = NSImage(named: appName!)
 			}
-			if Preferences.customizeMode == .on {
+			if UserDefaults.standard.isCustomizeMode {
 				button.isBordered = true
 			} else {
 				button.isBordered = false
@@ -80,16 +80,17 @@ class ViewController: NSViewController {
 		NSEvent.addGlobalMonitorForEvents(matching: .keyUp){_ in
 			// print("Release Keys") confirmated
 			NSApp.hide(nil) // necessário
-		}
+		} 
 		NSEvent.addGlobalMonitorForEvents(matching: .leftMouseUp) {_ in
-			if Preferences.customizeMode == .off {
+			if !UserDefaults.standard.isCustomizeMode {
+				print("deactivate app")
 				NSApp.deactivate()
 				NSApp.hide(nil)
 			}
 		}
 		
 		NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
-			if Preferences.customizeMode == .off {
+			if UserDefaults.standard.isCustomizeMode {
 				if $0.keyCode == 53 {
 					NSApp.deactivate()
 					NSApp.hide(nil)
@@ -99,7 +100,7 @@ class ViewController: NSViewController {
 				}
 			} else { // customizeMode is true:
 				if $0.keyCode == 53 {
-					Preferences.customizeMode = .off
+					UserDefaults.standard.isCustomizeMode = false
 				} else {
 					let character = $0.characters!
 					self.launchApp(withCharacter: character)
@@ -108,7 +109,7 @@ class ViewController: NSViewController {
 			return nil
 		}
 		
-		Preferences.customizeMode = .off
+		UserDefaults.standard.isCustomizeMode = false
 //		UserDefaults.standard.set("Finder", forKey: "a")
 //		UserDefaults.standard.set("Terminal", forKey: "o")
 //		UserDefaults.standard.set("Day One", forKey: "e")
@@ -131,7 +132,7 @@ class ViewController: NSViewController {
 			preferences.set(false, forKey: "appChanged")
 		}
 		for case let closeButton as CloseButton in self.view.subviews {
-			if Preferences.customizeMode == .on {
+			if UserDefaults.standard.isCustomizeMode {
 				closeButton.isHidden = false
 			} else {
 				closeButton.isHidden = true
@@ -165,16 +166,16 @@ class ViewController: NSViewController {
 		}
 	}
 	@IBAction func toggleCustomizeMode(_ sender: Any) {
-		if Preferences.customizeMode == .on {
-			Preferences.customizeMode = .off
+		if UserDefaults.standard.isCustomizeMode {
+			UserDefaults.standard.isCustomizeMode = false
 		} else {
-			Preferences.customizeMode = .on
+			UserDefaults.standard.isCustomizeMode = true
 		}
 	}
 	
 	// MARK: Functions
 	func launchApp(withCharacter character: String) {
-		if Preferences.customizeMode == .off {
+		if UserDefaults.standard.isCustomizeMode {
 			if preferences.contains(key: character) {
 				let appName = preferences.string(forKey: character)
 				if (appName?.isController)! {
@@ -205,15 +206,6 @@ class ViewController: NSViewController {
 			}
 			
 		}
-	}
-	
-}
-extension UserDefaults {
-	func contains(key: String) -> Bool {
-			return UserDefaults.standard.object(forKey: key) != nil
-	}
-	@objc dynamic var customizeMode: Bool {
-		return bool(forKey: "customizeMode")
 	}
 	
 }

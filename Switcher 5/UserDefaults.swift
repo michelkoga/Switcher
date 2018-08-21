@@ -8,29 +8,47 @@
 
 import Foundation
 
-class Preferences {
-	enum Custom {
-		case off
-		case on
+public extension UserDefaults {
+	
+	func contains(key: String) -> Bool {
+			return UserDefaults.standard.object(forKey: key) != nil
+
 	}
-	static var customizeMode: Custom {
+	@objc dynamic var customizeMode: Bool {
+		return bool(forKey: "customizeMode")
+	}
+	
+	@objc var CustomizeMode: Bool {
 		get {
 			if UserDefaults.standard.bool(forKey: "customizeMode") == true {
-				return .on
+				return true
 			} else {
-				return .off
+				return false
 			}
 		}
 		set(newValue) {
-			print(newValue)
-			switch newValue {
-			case .off:
-				UserDefaults.standard.set(false, forKey: "customizeMode")
-			case .on:
+			if newValue == true {
 				UserDefaults.standard.set(true, forKey: "customizeMode")
+			} else {
+				UserDefaults.standard.set(false, forKey: "customizeMode")
 			}
-			
 		}
 	}
-
+	
+	var isCustomizeMode: Bool {
+		get {
+			if UserDefaults.standard.bool(forKey: "customizeMode") == true {
+				return true
+			} else {
+				return false
+			}
+		}
+		set(newValue) {
+			if newValue == true {
+				UserDefaults.standard.set(true, forKey: "customizeMode")
+			} else {
+				UserDefaults.standard.set(false, forKey: "customizeMode")
+			}
+		}
+	}
 }
