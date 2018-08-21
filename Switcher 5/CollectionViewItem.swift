@@ -9,10 +9,11 @@
 import Cocoa
 
 class CollectionViewItem: NSCollectionViewItem {
-
-    override func viewDidLoad() {
+	
+	@IBOutlet weak var button: NSButton!
+	override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+		
     }
     
 }

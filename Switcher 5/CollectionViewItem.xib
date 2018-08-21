@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem" customModule="Switcher_5" customModuleProvider="target">
             <connections>
+                <outlet property="button" destination="hEj-m6-swg" id="9Ql-iB-XHc"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -17,20 +18,24 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HMq-yK-fKi">
+                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEj-m6-swg">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Cxw-kc-dYL"/>
-                </imageView>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="d88-MD-RJc">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
             </subviews>
             <constraints>
-                <constraint firstItem="HMq-yK-fKi" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="oPi-Q9-1wc"/>
-                <constraint firstItem="HMq-yK-fKi" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="rCx-BX-2CX"/>
-                <constraint firstAttribute="trailing" secondItem="HMq-yK-fKi" secondAttribute="trailing" id="ra4-NR-vPV"/>
-                <constraint firstAttribute="bottom" secondItem="HMq-yK-fKi" secondAttribute="bottom" id="uSR-Hm-a6d"/>
+                <constraint firstItem="hEj-m6-swg" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="76F-pY-3e4"/>
+                <constraint firstAttribute="bottom" secondItem="hEj-m6-swg" secondAttribute="bottom" id="PXe-yh-fxK"/>
+                <constraint firstItem="hEj-m6-swg" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Yo8-tG-EpB"/>
+                <constraint firstAttribute="trailing" secondItem="hEj-m6-swg" secondAttribute="trailing" id="j99-kl-EUc"/>
             </constraints>
         </customView>
         <customObject id="L74-bM-hse" customClass="CollectionViewItem" customModule="Switcher_5" customModuleProvider="target">
             <connections>
+                <outlet property="button" destination="hEj-m6-swg" id="uhR-g9-enz"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="I5x-fB-MNv"/>
             </connections>
         </customObject>

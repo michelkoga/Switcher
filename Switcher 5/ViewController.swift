@@ -54,13 +54,8 @@ class ViewController: NSViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Test Custom enum
-//		customizeMod = .off
-//		let defaults = UserDefaults.standard.bool(forKey: "test")
-//		print(defaults)
-//		customizeMod = .on
-//		let defaults2 = UserDefaults.standard.bool(forKey: "test")
-//		print(defaults2)
+		
+		
 		let workspace = NSWorkspace()
 		let icon = workspace.icon(forFile: "/Applications/App Store.app/Contents/Resources/AppIcon.icns")
 		self.buttonA.image = icon
@@ -83,7 +78,6 @@ class ViewController: NSViewController {
 		} 
 		NSEvent.addGlobalMonitorForEvents(matching: .leftMouseUp) {_ in
 			if !UserDefaults.standard.isCustomizeMode {
-				print("deactivate app")
 				NSApp.deactivate()
 				NSApp.hide(nil)
 			}
