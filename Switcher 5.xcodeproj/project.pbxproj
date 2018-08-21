@@ -12,6 +12,7 @@
 		DE3531B6212BD24600969F39 /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3531B4212BD24600969F39 /* CollectionViewItem.xib */; };
 		DE3531B9212BE1D000969F39 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3531B8212BE1D000969F39 /* File.swift */; };
 		DE3531BB212BE2F900969F39 /* AppsFilesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3531BA212BE2F900969F39 /* AppsFilesLoader.swift */; };
+		DE3531BD212BF67100969F39 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3531BC212BF67100969F39 /* ScrollView.swift */; };
 		DE77326C21133B110006A5EB /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77326B21133B110006A5EB /* Controls.swift */; };
 		DE8B794F21103B1400B0D8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B794E21103B1400B0D8BD /* AppDelegate.swift */; };
 		DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B795021103B1400B0D8BD /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 		DE3531B4212BD24600969F39 /* CollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewItem.xib; sourceTree = "<group>"; };
 		DE3531B8212BE1D000969F39 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		DE3531BA212BE2F900969F39 /* AppsFilesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsFilesLoader.swift; sourceTree = "<group>"; };
+		DE3531BC212BF67100969F39 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		DE77326B21133B110006A5EB /* Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
 		DE8B794B21103B1400B0D8BD /* Switcher 5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Switcher 5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8B794E21103B1400B0D8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				DEC2690921109B7E00219B49 /* CustomizeViewController.swift */,
 				DE8B795221103B1500B0D8BD /* Assets.xcassets */,
 				DE8B795421103B1500B0D8BD /* Main.storyboard */,
+				DE3531BC212BF67100969F39 /* ScrollView.swift */,
 				DE77326B21133B110006A5EB /* Controls.swift */,
 				DEC269332112ABB500219B49 /* View.swift */,
 				DEC2690D2110CBF300219B49 /* VisualEffectView.swift */,
@@ -215,6 +218,7 @@
 				DEEA0407212053F500277411 /* UserDefaults.swift in Sources */,
 				DEC2690E2110CBF300219B49 /* VisualEffectView.swift in Sources */,
 				DEC269122111ADAD00219B49 /* CloseButton.swift in Sources */,
+				DE3531BD212BF67100969F39 /* ScrollView.swift in Sources */,
 				DE8B795F21103D0300B0D8BD /* Button.swift in Sources */,
 				DE77326C21133B110006A5EB /* Controls.swift in Sources */,
 				DE3531B9212BE1D000969F39 /* File.swift in Sources */,

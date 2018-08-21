@@ -9,11 +9,15 @@
 import Cocoa
 
 class CustomizeViewController: NSViewController {
-
+	@IBOutlet weak var appsCollectionView: NSCollectionView!
+	
 	var images = ["Safari","Numbers","Pages","Xcode-beta","Finder"]
     override func viewDidLoad() {
         super.viewDidLoad()
 		
+		if let contentSize = self.appsCollectionView.collectionViewLayout?.collectionViewContentSize {
+			self.appsCollectionView.setFrameSize(contentSize)
+		}
 		// Test appsLoader
 		let apps = AppsLoader.getIconsAndUrlsFromApplicationsFolders()
 		for app in apps {
