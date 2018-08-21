@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14306.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem" customModule="Switcher_5" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HMq-yK-fKi">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Cxw-kc-dYL"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="HMq-yK-fKi" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="oPi-Q9-1wc"/>
+                <constraint firstItem="HMq-yK-fKi" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="rCx-BX-2CX"/>
+                <constraint firstAttribute="trailing" secondItem="HMq-yK-fKi" secondAttribute="trailing" id="ra4-NR-vPV"/>
+                <constraint firstAttribute="bottom" secondItem="HMq-yK-fKi" secondAttribute="bottom" id="uSR-Hm-a6d"/>
+            </constraints>
+        </customView>
+        <customObject id="L74-bM-hse" customClass="CollectionViewItem" customModule="Switcher_5" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="I5x-fB-MNv"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>

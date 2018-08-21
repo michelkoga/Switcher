@@ -25,3 +25,14 @@ class CustomizeViewController: NSViewController {
 		self.dismiss(self)
 	}
 }
+
+extension CustomizeViewController: NSCollectionViewDataSource {
+	static let item = "CollectionViewItem"
+	func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+		return 5 // Provisory
+	}
+	func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+		let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: CustomizeViewController.item), for: indexPath)
+		return item
+	}
+}

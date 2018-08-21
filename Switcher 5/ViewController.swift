@@ -175,7 +175,7 @@ class ViewController: NSViewController {
 	
 	// MARK: Functions
 	func launchApp(withCharacter character: String) {
-		if UserDefaults.standard.isCustomizeMode {
+		if !UserDefaults.standard.isCustomizeMode {
 			if preferences.contains(key: character) {
 				let appName = preferences.string(forKey: character)
 				if (appName?.isController)! {
