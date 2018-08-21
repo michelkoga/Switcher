@@ -9,7 +9,6 @@
 import Cocoa
 
 class Button: NSButton {
-	
 	@IBInspectable var character: String = ""
 	
     override func draw(_ dirtyRect: NSRect) {

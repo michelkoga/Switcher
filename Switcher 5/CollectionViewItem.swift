@@ -10,7 +10,9 @@ import Cocoa
 
 class CollectionViewItem: NSCollectionViewItem {
 	
-	@IBOutlet weak var button: NSButton!
+	@IBOutlet weak var button: ButtonInsideCollection!
+	@IBOutlet weak var label: NSTextFieldCell!
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
 		

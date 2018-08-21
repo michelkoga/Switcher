@@ -57,6 +57,7 @@ class Loader {
 		return false
 	}
 	//let checkTest = checkIfContentsResourcesPathExists(path: "/Applications/iBooks.app/Contents/Resources/")
+	
 	// 3 Append "Contents/Resources/" ***************************
 	static func appendIconPath(urls: [URL]) -> [URL] {
 		var extendedUrls = [URL]()
@@ -87,15 +88,19 @@ class Loader {
 	}
 	let appStoreURLResources = URL(fileURLWithPath: "/Applications/App Store.app/Contents/Resources/")
 	//let testContents = getContentsOf(folder: appStoreURLResources) // Working!!
+	// 4.-2 Filter **********************************************
+	static func filter(array: [URL]) -> [URL] {
+		
+		
+		
+		return []
+	}
 	// 4.-1 get iconFolder *************************************************************
 	static func findIconFile(urls: [URL]) -> [URL] {
 		var results = [URL]()
 		for url in urls {
-			if !url.path.contains("Xcode") {
-				if url.path.contains(".icns") {
-					results.append(url)
-					return results
-				}
+			if url.path.contains(".icns") {
+				results.append(url)
 			}
 		}
 		return results
@@ -113,20 +118,26 @@ class Loader {
 		}
 		return iconFolders
 	}
+	
+	
+	
+	
+	
+	
 	// 5 Convert to Path ******************************************************
-	static func urlToPath(urls: [URL]) -> [String] {
-		var paths = [String]()
-		for url in urls {
-			let path = url.path
-			paths.append(path)
-		}
-		return paths
-	}
+//	static func urlToPath(urls: [URL]) -> [String] {
+//		var paths = [String]()
+//		for url in urls {
+//			let path = url.path
+//			paths.append(path)
+//		}
+//		return paths
+//	}
 	// 7.-1.-1 URL to path ********REGEX**************************************
 	// 7.-1 Get AppName ********REGEX**************************************
 	static func getAppName(url: URL) -> String {
 		var array = [String]()
-		if let regex = try? NSRegularExpression(pattern: "/[\\w %]+.app/", options: .caseInsensitive) {
+		if let regex = try? NSRegularExpression(pattern: "/[\\w- %]+.app/", options: .caseInsensitive) {
 			let string = url.path as NSString
 			
 			array = regex.matches(in: string as String, options: [], range: NSRange(location: 0, length: string.length)).map {

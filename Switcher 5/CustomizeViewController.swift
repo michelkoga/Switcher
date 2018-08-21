@@ -18,11 +18,6 @@ class CustomizeViewController: NSViewController {
 		if let contentSize = self.appsCollectionView.collectionViewLayout?.collectionViewContentSize {
 			self.appsCollectionView.setFrameSize(contentSize)
 		}
-		// Test appsLoader
-		let apps = AppsLoader.getIconsAndUrlsFromApplicationsFolders()
-		for app in apps {
-			print("Name: \(app.appName), Url: \(app.url)")
-		}
     }
 	
 	@IBAction func setApp(_ sender: NSButton) {
@@ -34,6 +29,18 @@ class CustomizeViewController: NSViewController {
 	
 	@IBAction func dismissModal(_ sender: Any) {
 		self.dismiss(self)
+	}
+	@IBAction func selectApp(_ sender: ButtonInsideCollection) {
+		if sender.appName != "" {
+			let url = sender.url
+			let character = UserDefaults.standard.string(forKey: "chosenKey")
+			UserDefaults.standard.set(sender.title, forKey: character!)
+			UserDefaults.standard.set(url, forKey: character! + "Url")
+			UserDefaults.standard.set(true, forKey: "appChanged")
+			self.dismiss(self)
+		} else {
+			print("App don't have a name.")
+		}
 	}
 }
 
@@ -53,9 +60,11 @@ extension CustomizeViewController: NSCollectionViewDataSource {
 		
 		
 		let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: CustomizeViewController.item), for: indexPath) as! CollectionViewItem
-		let iconUrl = CustomizeViewController.apps[indexPath.item].url
-		print("The url is \(iconUrl)")
-		item.button.image = NSImage(byReferencing: iconUrl)
+		let app = CustomizeViewController.apps[indexPath.item]
+		item.button.image = NSImage(byReferencing: app.url)
+		item.label.stringValue = app.appName
+		item.button.appName = app.appName
+		item.button.url = app.url
 		item.button.image?.size = NSSize(width: 100, height: 100) // Adjust the size of the image
 		return item
 	}

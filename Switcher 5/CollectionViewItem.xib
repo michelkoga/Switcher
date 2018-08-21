@@ -9,26 +9,39 @@
         <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem" customModule="Switcher_5" customModuleProvider="target">
             <connections>
                 <outlet property="button" destination="hEj-m6-swg" id="9Ql-iB-XHc"/>
+                <outlet property="label" destination="kvi-bV-B0M" id="qag-ly-2ne"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEj-m6-swg">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="d88-MD-RJc">
+                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEj-m6-swg" customClass="ButtonInsideCollection" customModule="Switcher_5" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="20" width="100" height="100"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="d88-MD-RJc">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="selectApp:" target="-1" id="vLe-HF-uCy"/>
+                    </connections>
                 </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ay-M7-rXL">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="20"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="kvi-bV-B0M">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <constraints>
                 <constraint firstItem="hEj-m6-swg" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="76F-pY-3e4"/>
-                <constraint firstAttribute="bottom" secondItem="hEj-m6-swg" secondAttribute="bottom" id="PXe-yh-fxK"/>
+                <constraint firstAttribute="bottom" secondItem="hEj-m6-swg" secondAttribute="bottom" constant="20" id="PXe-yh-fxK"/>
                 <constraint firstItem="hEj-m6-swg" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Yo8-tG-EpB"/>
                 <constraint firstAttribute="trailing" secondItem="hEj-m6-swg" secondAttribute="trailing" id="j99-kl-EUc"/>
             </constraints>
@@ -36,6 +49,7 @@
         <customObject id="L74-bM-hse" customClass="CollectionViewItem" customModule="Switcher_5" customModuleProvider="target">
             <connections>
                 <outlet property="button" destination="hEj-m6-swg" id="uhR-g9-enz"/>
+                <outlet property="label" destination="kvi-bV-B0M" id="dph-HO-9oM"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="I5x-fB-MNv"/>
             </connections>
         </customObject>

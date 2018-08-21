@@ -41,8 +41,9 @@ class ViewController: NSViewController {
 	fileprivate func drawButtons() {
 		for case let button as Button in self.view.subviews {
 			if self.preferences.contains(key: button.character) {
-				let appName = preferences.string(forKey: button.character)
-				button.image = NSImage(named: appName!)
+				if let appUrl = UserDefaults.standard.url(forKey: button.character + "Url") {
+					button.image = NSImage(byReferencing: appUrl)
+				}
 			}
 			if UserDefaults.standard.isCustomizeMode {
 				button.isBordered = true
@@ -172,6 +173,7 @@ class ViewController: NSViewController {
 		if !UserDefaults.standard.isCustomizeMode {
 			if preferences.contains(key: character) {
 				let appName = preferences.string(forKey: character)
+				print("Trying open \(appName!)")
 				if (appName?.isController)! {
 					executeControl(with: appName!)
 					NSApp.hide(nil)
