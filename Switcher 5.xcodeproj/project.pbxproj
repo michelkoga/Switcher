@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE33BB202116E970008849CF /* IconFilesSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE33BB1F2116E970008849CF /* IconFilesSearcher.swift */; };
 		DE3531B5212BD24600969F39 /* CollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3531B3212BD24600969F39 /* CollectionViewItem.swift */; };
 		DE3531B6212BD24600969F39 /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3531B4212BD24600969F39 /* CollectionViewItem.xib */; };
 		DE3531B9212BE1D000969F39 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3531B8212BE1D000969F39 /* File.swift */; };
@@ -32,7 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE33BB1F2116E970008849CF /* IconFilesSearcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconFilesSearcher.swift; sourceTree = "<group>"; };
 		DE3531B3212BD24600969F39 /* CollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewItem.swift; sourceTree = "<group>"; };
 		DE3531B4212BD24600969F39 /* CollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewItem.xib; sourceTree = "<group>"; };
 		DE3531B8212BE1D000969F39 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
@@ -80,9 +78,30 @@
 			name = AppsLoader;
 			sourceTree = "<group>";
 		};
+		DE3531C0212C29FB00969F39 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DE3531B4212BD24600969F39 /* CollectionViewItem.xib */,
+				DE3531B3212BD24600969F39 /* CollectionViewItem.swift */,
+				DE3531BE212BFD7E00969F39 /* ButtonInsideCollection.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DE3531C1212C2AE000969F39 /* CustomizeView */ = {
+			isa = PBXGroup;
+			children = (
+				DEC2690921109B7E00219B49 /* CustomizeViewController.swift */,
+				DEC2690F2110FAF100219B49 /* CustomizeButton.swift */,
+				DEC269112111ADAD00219B49 /* CloseButton.swift */,
+			);
+			path = CustomizeView;
+			sourceTree = "<group>";
+		};
 		DE8B794221103B1400B0D8BD = {
 			isa = PBXGroup;
 			children = (
+				DE8B796021103D3500B0D8BD /* TODO */,
 				DEE2344321142EF80069A900 /* Playground.playground */,
 				DE8B794D21103B1400B0D8BD /* Switcher 5 */,
 				DE8B794C21103B1400B0D8BD /* Products */,
@@ -100,25 +119,20 @@
 		DE8B794D21103B1400B0D8BD /* Switcher 5 */ = {
 			isa = PBXGroup;
 			children = (
-				DE3531B7212BE19500969F39 /* AppsLoader */,
-				DE33BB1F2116E970008849CF /* IconFilesSearcher.swift */,
-				DEC2690721105B8E00219B49 /* Window.swift */,
 				DE8B794E21103B1400B0D8BD /* AppDelegate.swift */,
-				DEEA040821205FE100277411 /* ViewController */,
-				DEC2690921109B7E00219B49 /* CustomizeViewController.swift */,
-				DE8B795221103B1500B0D8BD /* Assets.xcassets */,
+				DEC2690721105B8E00219B49 /* Window.swift */,
+				DE3531B7212BE19500969F39 /* AppsLoader */,
 				DE8B795421103B1500B0D8BD /* Main.storyboard */,
-				DE3531BC212BF67100969F39 /* ScrollView.swift */,
+				DEEA040821205FE100277411 /* ViewController */,
+				DE3531C1212C2AE000969F39 /* CustomizeView */,
+				DE3531C0212C29FB00969F39 /* CollectionView */,
+				DE8B795221103B1500B0D8BD /* Assets.xcassets */,
+				DE8B795821103B1500B0D8BD /* Switcher_5.entitlements */,
 				DE77326B21133B110006A5EB /* Controls.swift */,
+				DE3531BC212BF67100969F39 /* ScrollView.swift */,
 				DEC269332112ABB500219B49 /* View.swift */,
 				DEC2690D2110CBF300219B49 /* VisualEffectView.swift */,
-				DE8B796021103D3500B0D8BD /* TODO */,
-				DE8B795E21103D0300B0D8BD /* Button.swift */,
-				DE3531BE212BFD7E00969F39 /* ButtonInsideCollection.swift */,
-				DEC269112111ADAD00219B49 /* CloseButton.swift */,
-				DEC2690F2110FAF100219B49 /* CustomizeButton.swift */,
 				DE8B795721103B1500B0D8BD /* Info.plist */,
-				DE8B795821103B1500B0D8BD /* Switcher_5.entitlements */,
 				DEC2690B2110AA2B00219B49 /* ListOfApps.swift */,
 			);
 			path = "Switcher 5";
@@ -128,9 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				DE8B795021103B1400B0D8BD /* ViewController.swift */,
-				DE3531B3212BD24600969F39 /* CollectionViewItem.swift */,
-				DE3531B4212BD24600969F39 /* CollectionViewItem.xib */,
 				DEEA0406212053F500277411 /* UserDefaults.swift */,
+				DE8B795E21103D0300B0D8BD /* Button.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -217,7 +230,6 @@
 				DE3531B5212BD24600969F39 /* CollectionViewItem.swift in Sources */,
 				DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */,
 				DEC269342112ABB500219B49 /* View.swift in Sources */,
-				DE33BB202116E970008849CF /* IconFilesSearcher.swift in Sources */,
 				DEEA0407212053F500277411 /* UserDefaults.swift in Sources */,
 				DEC2690E2110CBF300219B49 /* VisualEffectView.swift in Sources */,
 				DEC269122111ADAD00219B49 /* CloseButton.swift in Sources */,

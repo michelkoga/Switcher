@@ -21,6 +21,7 @@ class CustomizeViewController: NSViewController {
     }
 	
 	@IBAction func setApp(_ sender: NSButton) {
+		UserDefaults.standard.set(true, forKey: "isController") // so I can check if it is controller
 		let character = UserDefaults.standard.string(forKey: "chosenKey")
 		UserDefaults.standard.set(sender.image?.name(), forKey: character!)
 		UserDefaults.standard.set(true, forKey: "appChanged")
@@ -32,9 +33,10 @@ class CustomizeViewController: NSViewController {
 	}
 	@IBAction func selectApp(_ sender: ButtonInsideCollection) {
 		if sender.appName != "" {
+			UserDefaults.standard.set(false, forKey: "isController") // so I can check if it is controller
 			let url = sender.url
 			let character = UserDefaults.standard.string(forKey: "chosenKey")
-			UserDefaults.standard.set(sender.title, forKey: character!)
+			UserDefaults.standard.set(sender.appName, forKey: character!)
 			UserDefaults.standard.set(url, forKey: character! + "Url")
 			UserDefaults.standard.set(true, forKey: "appChanged")
 			self.dismiss(self)
@@ -65,7 +67,7 @@ extension CustomizeViewController: NSCollectionViewDataSource {
 		item.label.stringValue = app.appName
 		item.button.appName = app.appName
 		item.button.url = app.url
-		item.button.image?.size = NSSize(width: 100, height: 100) // Adjust the size of the image
+		item.button.image?.size = NSSize(width: 80, height: 80) // Adjust the size of the image
 		return item
 	}
 }

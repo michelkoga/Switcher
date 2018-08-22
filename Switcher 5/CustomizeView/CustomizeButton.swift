@@ -12,6 +12,7 @@ class CustomizeButton: NSButton {
 	
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
+		self.image?.size = NSSize(width: 80, height: 80)
     }
     
 }

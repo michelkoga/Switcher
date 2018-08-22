@@ -5,6 +5,7 @@ DOING:
 - Control app size in myView
 
 TODO:
+- Insert a search bar in apps list collection view
 - Set shortcut (command, etc)
 - Make a better show mode for customize sheet
 - Preferences Window
@@ -34,6 +35,7 @@ else -> launch App
 - More keys (matrix 11 x 4)
 - create a delete x corner
 - Some controls icons done (Volume, brightness, etc)
+- Created a way to customize with any app inside the users mac
 
 Observation:
 - Renaming class name breaks the project.

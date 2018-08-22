@@ -41,8 +41,15 @@ class ViewController: NSViewController {
 	fileprivate func drawButtons() {
 		for case let button as Button in self.view.subviews {
 			if self.preferences.contains(key: button.character) {
-				if let appUrl = UserDefaults.standard.url(forKey: button.character + "Url") {
-					button.image = NSImage(byReferencing: appUrl)
+				if !UserDefaults.standard.bool(forKey: "isController") {
+					if let appUrl = UserDefaults.standard.url(forKey: button.character + "Url") {
+						button.image = NSImage(byReferencing: appUrl)
+						button.image?.size = NSSize(width: 80, height: 80)
+					}
+				} else {
+					if let imageName = UserDefaults.standard.string(forKey: button.character) {
+						button.image = NSImage(named: imageName)
+					}
 				}
 			}
 			if UserDefaults.standard.isCustomizeMode {
@@ -157,6 +164,7 @@ class ViewController: NSViewController {
 			if button.character == sender.relatedButton {
 				button.image = nil
 				preferences.set("", forKey: button.character)
+				preferences.set(nil, forKey: button.character + "Url")
 			}
 		}
 	}
@@ -174,9 +182,9 @@ class ViewController: NSViewController {
 			if preferences.contains(key: character) {
 				let appName = preferences.string(forKey: character)
 				print("Trying open \(appName!)")
-				if (appName?.isController)! {
+				if UserDefaults.standard.bool(forKey: "isController") {
 					executeControl(with: appName!)
-					NSApp.hide(nil)
+					// NSApp.hide(nil)
 				} else {
 					NSApp.hide(nil)
 					if !NSWorkspace.shared.launchApplication(appName!) {

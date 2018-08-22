@@ -13,6 +13,7 @@ class Button: NSButton {
 	
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
+		self.image?.size = NSSize(width: 80, height: 80)
 		if self.tag == 1 || self.tag == 2 {
 			let jfKeyBumps = NSBezierPath()
 			jfKeyBumps.lineWidth = 6
