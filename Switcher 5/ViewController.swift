@@ -12,17 +12,17 @@ class ViewController: NSViewController {
 	
 	let customizeMode = "customizeMode"
 	
-	@IBOutlet weak var buttonA: Button!
-	@IBOutlet weak var buttonS: Button!
-	@IBOutlet weak var buttonD: Button!
-	@IBOutlet weak var buttonF: Button!
-	@IBOutlet weak var buttonG: Button!
-	@IBOutlet weak var buttonH: Button!
-	@IBOutlet weak var buttonJ: Button!
-	@IBOutlet weak var buttonK: Button!
-	@IBOutlet weak var buttonL: Button!
-	@IBOutlet weak var buttonSemicolon: Button!
-	@IBOutlet weak var buttonQuote: Button!
+//	@IBOutlet weak var buttonA: Button!
+//	@IBOutlet weak var buttonS: Button!
+//	@IBOutlet weak var buttonD: Button!
+//	@IBOutlet weak var buttonF: Button!
+//	@IBOutlet weak var buttonG: Button!
+//	@IBOutlet weak var buttonH: Button!
+//	@IBOutlet weak var buttonJ: Button!
+//	@IBOutlet weak var buttonK: Button!
+//	@IBOutlet weak var buttonL: Button!
+//	@IBOutlet weak var buttonSemicolon: Button!
+//	@IBOutlet weak var buttonQuote: Button!
 	
 	
 	
@@ -51,13 +51,7 @@ class ViewController: NSViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		
-		let workspace = NSWorkspace()
-		let icon = workspace.icon(forFile: "/Applications/App Store.app/Contents/Resources/AppIcon.icns")
-		self.buttonA.image = icon
-		
 		// Observer (1) to redraw buttons when change customize mode
-		
 		UserDefaults.standard.addObserver(self, forKeyPath: "customizeMode", options: NSKeyValueObservingOptions.new, context: nil)
 		// Observer (2) to redraw buttons when app changed
 		UserDefaults.standard.addObserver(self, forKeyPath: "appChanged", options: NSKeyValueObservingOptions.new, context: nil)
@@ -124,13 +118,6 @@ class ViewController: NSViewController {
 		if UserDefaults.standard.bool(forKey: "appChanged") {
 			UserDefaults.standard.set(false, forKey: "appChanged")
 		}
-		for case let closeButton as CloseButton in self.view.subviews {
-			if UserDefaults.standard.bool(forKey: "customizeMode") {
-				closeButton.isHidden = false
-			} else {
-				closeButton.isHidden = true
-			}
-		}
 	}
 	override var representedObject: Any? {
 		didSet {
@@ -151,8 +138,8 @@ class ViewController: NSViewController {
 	}
 	@IBAction func toggleCustomizeMode(_ sender: Any) {
 		UserDefaults.standard.set(false, forKey: "appChanged")
-		displayCustomizeSheet()
 		UserDefaults.standard.set(true, forKey: customizeMode)
+		displayCustomizeSheet()
 	}
 	
 	// MARK: Functions

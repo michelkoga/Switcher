@@ -45,6 +45,7 @@ SUCCESS:
 2018/8/3
 - Found a way to get to all apps inside Applications folder
 - Found a way to get icons from Contents/Resources/***.icns
+- Customize Apps and Controls working
 
 Next:
 - Search for the icon (sometimes its not in the same place(?))

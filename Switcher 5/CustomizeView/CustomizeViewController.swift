@@ -30,21 +30,21 @@ class CustomizeViewController: NSViewController {
 			}
 		}
 	}
-	
 	// ***********
 	//************
-	
-	func clearBorders() {
-		for case let button as CustomizeButton in self.view.subviews {
-			button.isBordered = false
-		}
+	lazy var lastSelectedButton = CustomizeButton()
+	func switchSelectedButton(selectedButton: CustomizeButton) {
+		lastSelectedButton.isBordered = false
+//		for case let button as CustomizeButton in self.view.subviews {
+//			button.isBordered = false
+//		}
+		selectedButton.isBordered = true
+		lastSelectedButton = selectedButton
 	}
 	@IBAction func setChosenKey(_ sender: CustomizeButton) {
 		UserDefaults.standard.set(sender.character, forKey: "chosenKey")
 		// TDODO: Make button highlight
-		clearBorders()
-		sender.isBordered = true
-		print(sender.image?.name())
+		switchSelectedButton(selectedButton: sender)
 	}
 	
 	// Delete Action Button:
