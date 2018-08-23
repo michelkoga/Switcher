@@ -40,9 +40,9 @@ class AppsLoader {
 			tuples.append((appName: appName, url: url))
 		}
 		let sortedtuples = tuples.sorted(by: {$0.appName < $1.appName})
-		for tuples in sortedtuples {
-			print("\(tuples.appName): \(tuples.url)")
-		}
+//		for tuples in sortedtuples {
+//			print("\(tuples.appName): \(tuples.url)")
+//		}
 		// Finder
 //		tuples.append((appName: "Finder", url: URL(fileURLWithPath: "/System/Library/CoreServices"))
 		return sortedtuples

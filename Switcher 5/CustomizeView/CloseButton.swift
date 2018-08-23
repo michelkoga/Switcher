@@ -13,7 +13,7 @@ class CloseButton: NSButton {
 	@IBInspectable var relatedButton: String = ""
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
-		self.isHidden = true
+//		self.isHidden = true
     }
     
 }

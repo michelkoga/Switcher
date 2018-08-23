@@ -130,7 +130,7 @@ class ViewController: NSViewController {
 	// When observer (1) observe change in customize mode user default, this function will start
 	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
 		drawButtons()
-		if preferences.bool(forKey: "appChanged") == true {
+		if preferences.bool(forKey: "appChanged") {
 			preferences.set(false, forKey: "appChanged")
 		}
 		for case let closeButton as CloseButton in self.view.subviews {
@@ -169,11 +169,13 @@ class ViewController: NSViewController {
 		}
 	}
 	@IBAction func toggleCustomizeMode(_ sender: Any) {
-		if UserDefaults.standard.isCustomizeMode {
-			UserDefaults.standard.isCustomizeMode = false
-		} else {
-			UserDefaults.standard.isCustomizeMode = true
-		}
+		displayCustomizeSheet()
+		UserDefaults.standard.isCustomizeMode = true
+//		if UserDefaults.standard.isCustomizeMode {
+//			UserDefaults.standard.isCustomizeMode = false
+//		} else {
+//			UserDefaults.standard.isCustomizeMode = true
+//		}
 	}
 	
 	// MARK: Functions

@@ -14,12 +14,32 @@ class CustomizeViewController: NSViewController {
 	var images = ["Safari","Numbers","Pages","Xcode-beta","Finder"]
     override func viewDidLoad() {
         super.viewDidLoad()
-		
+		drawButtons()
 		if let contentSize = self.appsCollectionView.collectionViewLayout?.collectionViewContentSize {
 			self.appsCollectionView.setFrameSize(contentSize)
 		}
     }
+	fileprivate func drawButtons() {
+		print("Starting Draw Customize Buttons:")
+		for case let button as CustomizeButton in self.view.subviews {
+			print("Detected \(button.character) character")
+			if UserDefaults.standard.contains(key: button.character) {
+				if let appUrl = UserDefaults.standard.url(forKey: button.character + "Url") {
+					button.image = NSImage(byReferencing: appUrl)
+				}
+			} else {
+				print("Don't contains \(button.character)")
+			}
+//			if UserDefaults.standard.isCustomizeMode {
+//				button.isBordered = true
+//			} else {
+//				button.isBordered = false
+//			}
+		}
+	}
 	
+	// ***********
+	//************
 	@IBAction func setApp(_ sender: NSButton) {
 		UserDefaults.standard.set(true, forKey: "isController") // so I can check if it is controller
 		let character = UserDefaults.standard.string(forKey: "chosenKey")
