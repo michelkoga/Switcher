@@ -10,7 +10,7 @@ import Cocoa
 
 class CustomizeViewController: NSViewController {
 	@IBOutlet weak var appsCollectionView: NSCollectionView!
-	
+	let customizeMode = "customizeMode"
 	var images = ["Safari","Numbers","Pages","Xcode-beta","Finder"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,49 +20,76 @@ class CustomizeViewController: NSViewController {
 		}
     }
 	fileprivate func drawButtons() {
-		print("Starting Draw Customize Buttons:")
 		for case let button as CustomizeButton in self.view.subviews {
-			print("Detected \(button.character) character")
-			if UserDefaults.standard.contains(key: button.character) {
-				if let appUrl = UserDefaults.standard.url(forKey: button.character + "Url") {
-					button.image = NSImage(byReferencing: appUrl)
-				}
+			if let appUrl = UserDefaults.standard.url(forKey: button.character + "Url") {
+				button.image = NSImage(byReferencing: appUrl)
 			} else {
-				print("Don't contains \(button.character)")
+				if let imageName = UserDefaults.standard.string(forKey: button.character) {
+					button.image = NSImage(named: imageName)
+				}
 			}
-//			if UserDefaults.standard.isCustomizeMode {
-//				button.isBordered = true
-//			} else {
-//				button.isBordered = false
-//			}
 		}
 	}
 	
 	// ***********
 	//************
-	@IBAction func setApp(_ sender: NSButton) {
-		UserDefaults.standard.set(true, forKey: "isController") // so I can check if it is controller
-		let character = UserDefaults.standard.string(forKey: "chosenKey")
-		UserDefaults.standard.set(sender.image?.name(), forKey: character!)
-		UserDefaults.standard.set(true, forKey: "appChanged")
-		self.dismiss(self)
+	
+	func clearBorders() {
+		for case let button as CustomizeButton in self.view.subviews {
+			button.isBordered = false
+		}
+	}
+	@IBAction func setChosenKey(_ sender: CustomizeButton) {
+		UserDefaults.standard.set(sender.character, forKey: "chosenKey")
+		// TDODO: Make button highlight
+		clearBorders()
+		sender.isBordered = true
+		print(sender.image?.name())
 	}
 	
-	@IBAction func dismissModal(_ sender: Any) {
-		self.dismiss(self)
+	// Delete Action Button:
+	@IBAction func clearButton(_ sender: CloseButton) {
+		for case let button as CustomizeButton in self.view.subviews {
+			if button.character == sender.relatedButton {
+				let appName = button.character
+				let imageUrl = button.character + "Url"
+				UserDefaults.standard.set("", forKey: appName)
+				UserDefaults.standard.set(nil, forKey: imageUrl)
+				UserDefaults.standard.set(true, forKey: "appChanged")
+				button.image = nil
+			}
+		}
+	
 	}
+	// Controllers:
+	@IBAction func setApp(_ sender: NSButton) {
+		if let character = UserDefaults.standard.string(forKey: "chosenKey") {
+			UserDefaults.standard.set(sender.image?.name(), forKey: character)
+			UserDefaults.standard.set(nil, forKey: character + "Url")
+			UserDefaults.standard.set(true, forKey: character + "isController")
+			UserDefaults.standard.set(true, forKey: "appChanged")
+			drawButtons()
+		}
+	}
+	
+	// Apps inside collection:
 	@IBAction func selectApp(_ sender: ButtonInsideCollection) {
 		if sender.appName != "" {
-			UserDefaults.standard.set(false, forKey: "isController") // so I can check if it is controller
 			let url = sender.url
-			let character = UserDefaults.standard.string(forKey: "chosenKey")
-			UserDefaults.standard.set(sender.appName, forKey: character!)
-			UserDefaults.standard.set(url, forKey: character! + "Url")
+			let character = UserDefaults.standard.string(forKey: "chosenKey")!
+			UserDefaults.standard.set(sender.appName, forKey: character)
+			UserDefaults.standard.set(url, forKey: character + "Url")
+			UserDefaults.standard.set(false, forKey: character + "isController")
 			UserDefaults.standard.set(true, forKey: "appChanged")
-			self.dismiss(self)
+			drawButtons()
 		} else {
 			print("App don't have a name.")
 		}
+	}
+	
+	@IBAction func dismissModal(_ sender: Any) {
+		UserDefaults.standard.set(false, forKey: customizeMode)
+		self.dismiss(self)
 	}
 }
 

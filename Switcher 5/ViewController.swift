@@ -9,15 +9,8 @@
 import Cocoa
 
 class ViewController: NSViewController {
-	// MARK: Variables:
-	var preferences = UserDefaults.standard
-//	var customizeMode = "customizeMode"
-	enum customize: String {
-		case on = "true"
-		case off = "false"
-	}
 	
-//	enum preferences.
+	let customizeMode = "customizeMode"
 	
 	@IBOutlet weak var buttonA: Button!
 	@IBOutlet weak var buttonS: Button!
@@ -40,22 +33,17 @@ class ViewController: NSViewController {
 	
 	fileprivate func drawButtons() {
 		for case let button as Button in self.view.subviews {
-			if self.preferences.contains(key: button.character) {
-				if !UserDefaults.standard.bool(forKey: "isController") {
-					if let appUrl = UserDefaults.standard.url(forKey: button.character + "Url") {
-						button.image = NSImage(byReferencing: appUrl)
-						button.image?.size = NSSize(width: 80, height: 80)
-					}
+			let buttonIsController = button.character + "isController"
+			if !UserDefaults.standard.bool(forKey: buttonIsController) {
+				if let appUrl = UserDefaults.standard.url(forKey: button.character + "Url") {
+					button.image = NSImage(byReferencing: appUrl)
 				} else {
-					if let imageName = UserDefaults.standard.string(forKey: button.character) {
-						button.image = NSImage(named: imageName)
-					}
+					button.image = nil
 				}
-			}
-			if UserDefaults.standard.isCustomizeMode {
-				button.isBordered = true
 			} else {
-				button.isBordered = false
+				if let imageName = UserDefaults.standard.string(forKey: button.character) {
+					button.image = NSImage(named: imageName)
+				}
 			}
 		}
 	}
@@ -69,9 +57,10 @@ class ViewController: NSViewController {
 		self.buttonA.image = icon
 		
 		// Observer (1) to redraw buttons when change customize mode
-		preferences.addObserver(self, forKeyPath: "customizeMode", options: NSKeyValueObservingOptions.new, context: nil)
+		
+		UserDefaults.standard.addObserver(self, forKeyPath: "customizeMode", options: NSKeyValueObservingOptions.new, context: nil)
 		// Observer (2) to redraw buttons when app changed
-		preferences.addObserver(self, forKeyPath: "appChanged", options: NSKeyValueObservingOptions.new, context: nil)
+		UserDefaults.standard.addObserver(self, forKeyPath: "appChanged", options: NSKeyValueObservingOptions.new, context: nil)
 		NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) {
 			switch $0.modifierFlags.intersection(.deviceIndependentFlagsMask) {
 			case [.command, .option]:
@@ -85,14 +74,16 @@ class ViewController: NSViewController {
 			NSApp.hide(nil) // necessário
 		} 
 		NSEvent.addGlobalMonitorForEvents(matching: .leftMouseUp) {_ in
-			if !UserDefaults.standard.isCustomizeMode {
+			if !UserDefaults.standard.bool(forKey: self.customizeMode) {
 				NSApp.deactivate()
 				NSApp.hide(nil)
+			} else {
+				print("isCustomizeMode")
 			}
 		}
 		
 		NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
-			if UserDefaults.standard.isCustomizeMode {
+			if UserDefaults.standard.bool(forKey: self.customizeMode) {
 				if $0.keyCode == 53 {
 					NSApp.deactivate()
 					NSApp.hide(nil)
@@ -102,7 +93,7 @@ class ViewController: NSViewController {
 				}
 			} else { // customizeMode is true:
 				if $0.keyCode == 53 {
-					UserDefaults.standard.isCustomizeMode = false
+					UserDefaults.standard.set(true, forKey: self.customizeMode)
 				} else {
 					let character = $0.characters!
 					self.launchApp(withCharacter: character)
@@ -111,7 +102,7 @@ class ViewController: NSViewController {
 			return nil
 		}
 		
-		UserDefaults.standard.isCustomizeMode = false
+		UserDefaults.standard.set(false, forKey: "customizeMode")
 //		UserDefaults.standard.set("Finder", forKey: "a")
 //		UserDefaults.standard.set("Terminal", forKey: "o")
 //		UserDefaults.standard.set("Day One", forKey: "e")
@@ -130,11 +121,11 @@ class ViewController: NSViewController {
 	// When observer (1) observe change in customize mode user default, this function will start
 	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
 		drawButtons()
-		if preferences.bool(forKey: "appChanged") {
-			preferences.set(false, forKey: "appChanged")
+		if UserDefaults.standard.bool(forKey: "appChanged") {
+			UserDefaults.standard.set(false, forKey: "appChanged")
 		}
 		for case let closeButton as CloseButton in self.view.subviews {
-			if UserDefaults.standard.isCustomizeMode {
+			if UserDefaults.standard.bool(forKey: "customizeMode") {
 				closeButton.isHidden = false
 			} else {
 				closeButton.isHidden = true
@@ -158,39 +149,24 @@ class ViewController: NSViewController {
 	func displayCustomizeSheet() {
 		self.presentAsSheet(customizeViewController)
 	}
-	// Delete Action Button:
-	@IBAction func deleteApp(_ sender: CloseButton) {
-		for case let button as Button in self.view.subviews {
-			if button.character == sender.relatedButton {
-				button.image = nil
-				preferences.set("", forKey: button.character)
-				preferences.set(nil, forKey: button.character + "Url")
-			}
-		}
-	}
 	@IBAction func toggleCustomizeMode(_ sender: Any) {
+		UserDefaults.standard.set(false, forKey: "appChanged")
 		displayCustomizeSheet()
-		UserDefaults.standard.isCustomizeMode = true
-//		if UserDefaults.standard.isCustomizeMode {
-//			UserDefaults.standard.isCustomizeMode = false
-//		} else {
-//			UserDefaults.standard.isCustomizeMode = true
-//		}
+		UserDefaults.standard.set(true, forKey: customizeMode)
 	}
 	
 	// MARK: Functions
 	func launchApp(withCharacter character: String) {
-		if !UserDefaults.standard.isCustomizeMode {
-			if preferences.contains(key: character) {
-				let appName = preferences.string(forKey: character)
-				print("Trying open \(appName!)")
+		if !UserDefaults.standard.bool(forKey: customizeMode) {
+			if let appName = UserDefaults.standard.string(forKey: character) {
+				print("Trying open \(appName)")
 				if UserDefaults.standard.bool(forKey: "isController") {
-					executeControl(with: appName!)
+					executeControl(with: appName)
 					// NSApp.hide(nil)
 				} else {
 					NSApp.hide(nil)
-					if !NSWorkspace.shared.launchApplication(appName!) {
-						print("Couldn't open App: \(appName!)")
+					if !NSWorkspace.shared.launchApplication(appName) {
+						print("Couldn't open App: \(appName)")
 					}
 				}
 			} else {
@@ -204,7 +180,7 @@ class ViewController: NSViewController {
 			case "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
 				 "0","1","2","3","4","5","6","7","8","9",
 				 "-","[",";","'",",",".","/":
-				preferences.set(character, forKey: "chosenKey")
+				UserDefaults.standard.set(character, forKey: "chosenKey")
 				displayCustomizeSheet()
 			default:
 				

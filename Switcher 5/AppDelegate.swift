@@ -11,7 +11,7 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 	let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
-
+	let customizeMode = "customizeMode"
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		//Observer(1) to changes in customize mode
 		UserDefaults.standard.addObserver(self, forKeyPath: "customizeMode", options: NSKeyValueObservingOptions.new, context: nil)
@@ -23,18 +23,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	}
 	@objc func customizeMode(_ sender: NSMenuItem) {
 //		let customizeMode = UserDefaults.standard.bool(forKey: "customizeMode")
-		if !UserDefaults.standard.isCustomizeMode {
-			UserDefaults.standard.isCustomizeMode = true
+		if !UserDefaults.standard.bool(forKey: customizeMode) {
+			UserDefaults.standard.set(true, forKey: customizeMode)
 			sender.state = .on
 		} else {
-			UserDefaults.standard.isCustomizeMode = false
+			UserDefaults.standard.set(false, forKey: customizeMode)
 			sender.state = .off
 		}
 		
 	}
 	// When observer(1) observe change in customize mode user default, this function will start
 	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-		if UserDefaults.standard.isCustomizeMode {
+		if UserDefaults.standard.bool(forKey: customizeMode) {
 			statusItem.menu?.items[0].state = .on // This is the first item in Menu
 		} else {
 			statusItem.menu?.items[0].state = .off

@@ -128,7 +128,6 @@
 				DE3531C0212C29FB00969F39 /* CollectionView */,
 				DE8B795221103B1500B0D8BD /* Assets.xcassets */,
 				DE8B795821103B1500B0D8BD /* Switcher_5.entitlements */,
-				DE77326B21133B110006A5EB /* Controls.swift */,
 				DE3531BC212BF67100969F39 /* ScrollView.swift */,
 				DEC269332112ABB500219B49 /* View.swift */,
 				DEC2690D2110CBF300219B49 /* VisualEffectView.swift */,
@@ -144,6 +143,7 @@
 				DE8B795021103B1400B0D8BD /* ViewController.swift */,
 				DEEA0406212053F500277411 /* UserDefaults.swift */,
 				DE8B795E21103D0300B0D8BD /* Button.swift */,
+				DE77326B21133B110006A5EB /* Controls.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
