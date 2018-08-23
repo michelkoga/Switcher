@@ -32,7 +32,7 @@ class ViewController: NSViewController {
 	}
 	
 	fileprivate func drawButtons() {
-		for case let button as Button in self.view.subviews {
+		for case let button as MainButton in self.view.subviews {
 			let buttonIsController = button.character + "isController"
 			if !UserDefaults.standard.bool(forKey: buttonIsController) {
 				if let appUrl = UserDefaults.standard.url(forKey: button.character + "Url") {
