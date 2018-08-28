@@ -1,18 +1,16 @@
 
 DOING:
 - Don't forget commit
-- Build controls functionality (Volume, brightness, etc)
-- Control app size in myView
-
-TODO:
-- Insert a search bar in apps list collection view
-- Set shortcut (command, etc)
-- Make a better show mode for customize sheet
 - Preferences Window
 	- Number of rows?
 	- Show key characters
 	- Size
 	- Set Shortcut
+- Build controls functionality (Volume, brightness, etc)
+- Control app size in myView
+
+TODO:
+- Insert a search bar in apps list collection view
 - More design improvements
 - round corners
 - Better clues for the position of the keys
@@ -36,6 +34,7 @@ else -> launch App
 - create a delete x corner
 - Some controls icons done (Volume, brightness, etc)
 - Created a way to customize with any app inside the users mac
+- Make a better show mode for customize sheet
 
 Observation:
 - Renaming class name breaks the project.

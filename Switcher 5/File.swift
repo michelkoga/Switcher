@@ -20,7 +20,6 @@ class Loader {
 	
 	// 1. Get all files ***************************************************************************
 	static func contentsOf(folder: URL) -> [URL] {
-		let applicationUrl = URL(fileURLWithPath: "/Applications/")
 		let fileManager = FileManager.default
 		
 		do {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0E56D6212FFFC500AF79DD /* DefaultApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E56D5212FFFC500AF79DD /* DefaultApps.swift */; };
 		DE3531B5212BD24600969F39 /* CollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3531B3212BD24600969F39 /* CollectionViewItem.swift */; };
 		DE3531B6212BD24600969F39 /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3531B4212BD24600969F39 /* CollectionViewItem.xib */; };
 		DE3531B9212BE1D000969F39 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3531B8212BE1D000969F39 /* File.swift */; };
@@ -28,10 +29,10 @@
 		DEC269102110FAF100219B49 /* CustomizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690F2110FAF100219B49 /* CustomizeButton.swift */; };
 		DEC269122111ADAD00219B49 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC269112111ADAD00219B49 /* CloseButton.swift */; };
 		DEC269342112ABB500219B49 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC269332112ABB500219B49 /* View.swift */; };
-		DEEA0407212053F500277411 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEA0406212053F500277411 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE0E56D5212FFFC500AF79DD /* DefaultApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultApps.swift; sourceTree = "<group>"; };
 		DE3531B3212BD24600969F39 /* CollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewItem.swift; sourceTree = "<group>"; };
 		DE3531B4212BD24600969F39 /* CollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewItem.xib; sourceTree = "<group>"; };
 		DE3531B8212BE1D000969F39 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		DEC269112111ADAD00219B49 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		DEC269332112ABB500219B49 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DEE2344321142EF80069A900 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		DEEA0406212053F500277411 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +76,7 @@
 			children = (
 				DE3531BA212BE2F900969F39 /* AppsFilesLoader.swift */,
 				DE3531B8212BE1D000969F39 /* File.swift */,
+				DE0E56D5212FFFC500AF79DD /* DefaultApps.swift */,
 			);
 			name = AppsLoader;
 			sourceTree = "<group>";
@@ -144,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				DE8B795021103B1400B0D8BD /* ViewController.swift */,
-				DEEA0406212053F500277411 /* UserDefaults.swift */,
 				DE3531C4212EA3B700969F39 /* MainButton.swift */,
 				DE77326B21133B110006A5EB /* Controls.swift */,
 			);
@@ -230,11 +230,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEC2690C2110AA2B00219B49 /* ListOfApps.swift in Sources */,
+				DE0E56D6212FFFC500AF79DD /* DefaultApps.swift in Sources */,
 				DE3531B5212BD24600969F39 /* CollectionViewItem.swift in Sources */,
 				DE3531C5212EA3B700969F39 /* MainButton.swift in Sources */,
 				DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */,
 				DEC269342112ABB500219B49 /* View.swift in Sources */,
-				DEEA0407212053F500277411 /* UserDefaults.swift in Sources */,
 				DEC2690E2110CBF300219B49 /* VisualEffectView.swift in Sources */,
 				DEC269122111ADAD00219B49 /* CloseButton.swift in Sources */,
 				DE3531BD212BF67100969F39 /* ScrollView.swift in Sources */,

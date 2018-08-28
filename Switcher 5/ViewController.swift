@@ -10,22 +10,12 @@ import Cocoa
 
 class ViewController: NSViewController {
 	
-	let customizeMode = "customizeMode"
-	
-//	@IBOutlet weak var buttonA: Button!
-//	@IBOutlet weak var buttonS: Button!
-//	@IBOutlet weak var buttonD: Button!
-//	@IBOutlet weak var buttonF: Button!
-//	@IBOutlet weak var buttonG: Button!
-//	@IBOutlet weak var buttonH: Button!
-//	@IBOutlet weak var buttonJ: Button!
-//	@IBOutlet weak var buttonK: Button!
-//	@IBOutlet weak var buttonL: Button!
-//	@IBOutlet weak var buttonSemicolon: Button!
-//	@IBOutlet weak var buttonQuote: Button!
-	
-	
-	
+	let chosenKey = "chosen_key"
+	let customizeMode = "customize_mode"
+	let isController = "is_controller"
+	let appChanged = "app_changed"
+	let customizeViewIdentifier = "customize_view_identifier"
+	let url = "_url"
 	
 	enum LaunchAppError: Error {
 		case invalidApp
@@ -33,16 +23,16 @@ class ViewController: NSViewController {
 	
 	fileprivate func drawButtons() {
 		for case let button as MainButton in self.view.subviews {
-			let buttonIsController = button.character + "isController"
+			let buttonIsController = button.character + isController
 			if !UserDefaults.standard.bool(forKey: buttonIsController) {
-				if let appUrl = UserDefaults.standard.url(forKey: button.character + "Url") {
+				if let appUrl = UserDefaults.standard.url(forKey: button.character + url) {
 					button.image = NSImage(byReferencing: appUrl)
 				} else {
 					button.image = nil
 				}
 			} else {
 				if let imageName = UserDefaults.standard.string(forKey: button.character) {
-					button.image = NSImage(named: imageName)
+					button.image = NSImage(imageLiteralResourceName: imageName)
 				}
 			}
 		}
@@ -52,9 +42,9 @@ class ViewController: NSViewController {
 		super.viewDidLoad()
 		
 		// Observer (1) to redraw buttons when change customize mode
-		UserDefaults.standard.addObserver(self, forKeyPath: "customizeMode", options: NSKeyValueObservingOptions.new, context: nil)
+		UserDefaults.standard.addObserver(self, forKeyPath: customizeMode, options: NSKeyValueObservingOptions.new, context: nil)
 		// Observer (2) to redraw buttons when app changed
-		UserDefaults.standard.addObserver(self, forKeyPath: "appChanged", options: NSKeyValueObservingOptions.new, context: nil)
+		UserDefaults.standard.addObserver(self, forKeyPath: appChanged, options: NSKeyValueObservingOptions.new, context: nil)
 		NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) {
 			switch $0.modifierFlags.intersection(.deviceIndependentFlagsMask) {
 			case [.command, .option]:
@@ -68,12 +58,8 @@ class ViewController: NSViewController {
 			NSApp.hide(nil) // necessário
 		} 
 		NSEvent.addGlobalMonitorForEvents(matching: .leftMouseUp) {_ in
-			if !UserDefaults.standard.bool(forKey: self.customizeMode) {
-				NSApp.deactivate()
-				NSApp.hide(nil)
-			} else {
-				print("isCustomizeMode")
-			}
+			NSApp.deactivate()
+			NSApp.hide(nil)
 		}
 		
 		NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
@@ -96,27 +82,15 @@ class ViewController: NSViewController {
 			return nil
 		}
 		
-		UserDefaults.standard.set(false, forKey: "customizeMode")
-//		UserDefaults.standard.set("Finder", forKey: "a")
-//		UserDefaults.standard.set("Terminal", forKey: "o")
-//		UserDefaults.standard.set("Day One", forKey: "e")
-//		UserDefaults.standard.set("UlyssesMac", forKey: "u")
-//		UserDefaults.standard.set("Bear", forKey: "i")
-//		
-//		UserDefaults.standard.set("Pixelmator", forKey: "d")
-//		UserDefaults.standard.set("Safari", forKey: "h")
-//		UserDefaults.standard.set("Xcode-beta", forKey: "t")
-//		UserDefaults.standard.set("Sublime Text", forKey: "n")
-//		UserDefaults.standard.set("Notes", forKey: "s")
-//		UserDefaults.standard.set("Dictionary", forKey: "-")
+		UserDefaults.standard.set(false, forKey: customizeMode)
 		
 		drawButtons()
 	}
 	// When observer (1) observe change in customize mode user default, this function will start
 	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
 		drawButtons()
-		if UserDefaults.standard.bool(forKey: "appChanged") {
-			UserDefaults.standard.set(false, forKey: "appChanged")
+		if UserDefaults.standard.bool(forKey: appChanged) {
+			UserDefaults.standard.set(false, forKey: appChanged)
 		}
 	}
 	override var representedObject: Any? {
@@ -131,13 +105,14 @@ class ViewController: NSViewController {
 	}
 	// MARK: display customize View Controller:
 	lazy var customizeViewController: CustomizeViewController = {
-		return self.storyboard!.instantiateController(withIdentifier: "customizeView") as! NSViewController
+		return self.storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(customizeViewIdentifier)) as! NSViewController
 		}() as! CustomizeViewController
 	func displayCustomizeSheet() {
 		self.presentAsSheet(customizeViewController)
+//		self.presenting?.presentViewControllerAsSheet(customizeViewController)
 	}
 	@IBAction func toggleCustomizeMode(_ sender: Any) {
-		UserDefaults.standard.set(false, forKey: "appChanged")
+		UserDefaults.standard.set(false, forKey: appChanged)
 		UserDefaults.standard.set(true, forKey: customizeMode)
 		displayCustomizeSheet()
 	}
@@ -146,8 +121,8 @@ class ViewController: NSViewController {
 	func launchApp(withCharacter character: String) {
 		if !UserDefaults.standard.bool(forKey: customizeMode) {
 			if let appName = UserDefaults.standard.string(forKey: character) {
-				print("Trying open \(appName)")
-				if UserDefaults.standard.bool(forKey: "isController") {
+				if appName == "" { return }
+				if UserDefaults.standard.bool(forKey: isController) {
 					executeControl(with: appName)
 					// NSApp.hide(nil)
 				} else {
@@ -167,7 +142,7 @@ class ViewController: NSViewController {
 			case "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
 				 "0","1","2","3","4","5","6","7","8","9",
 				 "-","[",";","'",",",".","/":
-				UserDefaults.standard.set(character, forKey: "chosenKey")
+				UserDefaults.standard.set(character, forKey: chosenKey)
 				displayCustomizeSheet()
 			default:
 				

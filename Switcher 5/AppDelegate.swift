@@ -15,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		// initialize icon status bar button
 		if let button = statusItem.button {
-			button.image = NSImage(named:"switcherMenubarIcon")
+			button.image = NSImage(imageLiteralResourceName: "switcherMenubarIcon")
 		}
 		constructMenu()
 	}

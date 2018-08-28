@@ -17,7 +17,7 @@ class CustomizeButton: NSButton {
 		if self.character == "f" || self.character == "j" {
 			let jfKeyBumps = NSBezierPath()
 			jfKeyBumps.lineWidth = 6
-			jfKeyBumps.lineCapStyle = NSBezierPath.LineCapStyle.round
+			jfKeyBumps.lineCapStyle = .round
 			jfKeyBumps.move(to: CGPoint(x: 40, y: 96))
 			jfKeyBumps.line(to: CGPoint(x: 60, y: 96))
 			NSColor.init(calibratedWhite: 0.9, alpha: 0.8).setStroke()
