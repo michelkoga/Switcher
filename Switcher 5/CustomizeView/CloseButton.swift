@@ -13,7 +13,12 @@ class CloseButton: NSButton {
 	@IBInspectable var relatedButton: String = ""
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
-//		self.isHidden = true
+		self.isHidden = true
     }
-    
+	override func mouseEntered(with event: NSEvent) {
+		print("Mouse entered")
+	}
+	override func mouseExited(with event: NSEvent) {
+		print("Exited")
+	}
 }

@@ -9,7 +9,7 @@
 import Cocoa
 
 class ViewController: NSViewController {
-	
+//	lazy var apps = []()
 	let chosenKey = "chosen_key"
 	let customizeMode = "customize_mode"
 	let isController = "is_controller"
@@ -38,9 +38,13 @@ class ViewController: NSViewController {
 		}
 	}
 	
+	static var apps = AppsLoader.getIconsAndUrlsFromApplicationsFolders()
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+		if CustomizeViewController.appTuple == nil {
+			CustomizeViewController.appTuple = AppsLoader.getIconsAndUrlsFromApplicationsFolders()
+		}
+		self.view.layer?.cornerRadius = 15
 		// Observer (1) to redraw buttons when change customize mode
 		UserDefaults.standard.addObserver(self, forKeyPath: customizeMode, options: NSKeyValueObservingOptions.new, context: nil)
 		// Observer (2) to redraw buttons when app changed

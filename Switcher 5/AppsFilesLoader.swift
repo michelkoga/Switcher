@@ -10,7 +10,7 @@ import Foundation
 class AppsLoader {
 	private static let applicationUrl = URL(fileURLWithPath: "/Applications/")
 	private static let utilitiesUrl = URL(fileURLWithPath: "/Applications/Utilities")
-	
+//	lazy var apps = [(appName: String, url: URL)]()
 	static func getIconsAndUrlsFromApplicationsFolders() -> [(appName: String, url: URL)] {
 		
 		let allFilesFromFolder = Loader.contentsOf(folder: applicationUrl)
@@ -41,9 +41,9 @@ class AppsLoader {
 			tuples.append((appName: appName, url: url))
 		}
 		let sortedtuples = tuples.sorted(by: {$0.appName < $1.appName})
-		for tuples in sortedtuples {
-			print(tuples.url)
-		}
+//		for tuples in sortedtuples {
+//			print(tuples.url)
+//		}
 		// Finder
 //		tuples.append((appName: "Finder", url: URL(fileURLWithPath: "/System/Library/CoreServices"))
 		return sortedtuples

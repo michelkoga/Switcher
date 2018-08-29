@@ -15,6 +15,7 @@
 		DE3531BD212BF67100969F39 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3531BC212BF67100969F39 /* ScrollView.swift */; };
 		DE3531BF212BFD7E00969F39 /* ButtonInsideCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3531BE212BFD7E00969F39 /* ButtonInsideCollection.swift */; };
 		DE3531C5212EA3B700969F39 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3531C4212EA3B700969F39 /* MainButton.swift */; };
+		DE5E265B21352DE000A79CCF /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E265A21352DE000A79CCF /* App.swift */; };
 		DE77326C21133B110006A5EB /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77326B21133B110006A5EB /* Controls.swift */; };
 		DE8B794F21103B1400B0D8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B794E21103B1400B0D8BD /* AppDelegate.swift */; };
 		DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B795021103B1400B0D8BD /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		DE3531BC212BF67100969F39 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		DE3531BE212BFD7E00969F39 /* ButtonInsideCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonInsideCollection.swift; sourceTree = "<group>"; };
 		DE3531C4212EA3B700969F39 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		DE5E265A21352DE000A79CCF /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		DE77326B21133B110006A5EB /* Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
 		DE8B794B21103B1400B0D8BD /* Switcher 5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Switcher 5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8B794E21103B1400B0D8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				DE3531BA212BE2F900969F39 /* AppsFilesLoader.swift */,
+				DE5E265A21352DE000A79CCF /* App.swift */,
 				DE3531B8212BE1D000969F39 /* File.swift */,
 				DE0E56D5212FFFC500AF79DD /* DefaultApps.swift */,
 			);
@@ -232,6 +235,7 @@
 				DEC2690C2110AA2B00219B49 /* ListOfApps.swift in Sources */,
 				DE0E56D6212FFFC500AF79DD /* DefaultApps.swift in Sources */,
 				DE3531B5212BD24600969F39 /* CollectionViewItem.swift in Sources */,
+				DE5E265B21352DE000A79CCF /* App.swift in Sources */,
 				DE3531C5212EA3B700969F39 /* MainButton.swift in Sources */,
 				DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */,
 				DEC269342112ABB500219B49 /* View.swift in Sources */,
@@ -389,6 +393,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "michel.Switcher-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -407,6 +412,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "michel.Switcher-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

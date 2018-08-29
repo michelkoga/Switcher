@@ -13,6 +13,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
 	
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
+		// Refresh when monitor chage(eg. from mac screen to extended monitor) to avoid uncentered view:
+		NotificationCenter.default.addObserver(forName: NSApplication.didChangeScreenParametersNotification,
+											   object: NSApplication.shared,
+											   queue: OperationQueue.main) {
+												notification -> Void in
+												self.restarting()
+		}
 		// initialize icon status bar button
 		if let button = statusItem.button {
 			button.image = NSImage(imageLiteralResourceName: "switcherMenubarIcon")
@@ -32,6 +39,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		statusItem.menu = menu
 	}
 	@objc func restart(_ sender: NSMenuItem) {
+		restarting()
+	}
+	func restarting() {
 		let url = URL(fileURLWithPath: Bundle.main.resourcePath!)
 		let path = url.deletingLastPathComponent().deletingLastPathComponent().absoluteString
 		let task = Process()

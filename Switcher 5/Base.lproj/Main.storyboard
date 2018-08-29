@@ -1368,12 +1368,13 @@
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="Oen-2U-k25">
                                                 <size key="itemSize" width="100" height="100"/>
                                             </collectionViewFlowLayout>
-                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="primaryBackgroundColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
                                                 <outlet property="dataSource" destination="443-wp-bPm" id="gyP-fj-Qpz"/>
                                             </connections>
                                         </collectionView>
                                     </subviews>
+                                    <color key="backgroundColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Cfy-Vn-hxL">
                                     <rect key="frame" x="-100" y="-100" width="233" height="15"/>

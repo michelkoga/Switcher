@@ -9,6 +9,8 @@
 import Cocoa
 
 class CustomizeViewController: NSViewController {
+	static var appTuple: [(appName: String, url: URL)]? = nil
+	
 	@IBOutlet weak var appsCollectionView: NSCollectionView!
 	let customizeMode = "customize_mode"
 	let chosenKey = "chosen_key"
@@ -32,6 +34,7 @@ class CustomizeViewController: NSViewController {
 			self.appsCollectionView.setFrameSize(contentSize)
 		}
     }
+	
 	fileprivate func drawButtons() {
 		for case let button as CustomizeButton in self.view.subviews {
 			if let appUrl = UserDefaults.standard.url(forKey: button.character + url) {
@@ -141,18 +144,16 @@ class CustomizeViewController: NSViewController {
 
 extension CustomizeViewController: NSCollectionViewDataSource {
 	static let item = "CollectionViewItem"
-	static let apps = AppsLoader.getIconsAndUrlsFromApplicationsFolders()
-	
+//	static var apps = AppsLoader.getIconsAndUrlsFromApplicationsFolders()
 	func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-		
-		return CustomizeViewController.apps.count
+		return CustomizeViewController.appTuple!.count
 		
 	}
 	
 	func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
 		
 		let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: CustomizeViewController.item), for: indexPath) as! CollectionViewItem
-		let app = CustomizeViewController.apps[indexPath.item]
+		let app = CustomizeViewController.appTuple![indexPath.item]
 		item.button.image = NSImage(byReferencing: app.url)
 		item.label.stringValue = app.appName
 		item.button.appName = app.appName
