@@ -17,8 +17,44 @@ class ViewController: NSViewController {
 	let customizeViewIdentifier = "customize_view_identifier"
 	let url = "_url"
 	
-	enum LaunchAppError: Error {
-		case invalidApp
+	fileprivate func drawRunningAppIndicator() {  //??
+		let runningApps = NSWorkspace.shared.runningApplications
+		for case let button as MainButton in self.view.subviews {
+			for app in runningApps {
+				if button.appName == app.localizedName {
+					button.isRunning = true
+					break
+				}
+				//				button.isRunning = false
+			}
+		}
+	}
+	fileprivate func drawRunningAppIndicator(with runningApps: [NSRunningApplication]) {  //??
+		for case let button as MainButton in self.view.subviews {
+			for app in runningApps {
+				if button.appName == app.localizedName {
+					button.isRunning = true
+					break
+				}
+				//				button.isRunning = false
+			}
+		}
+	}
+	fileprivate func showRunningApplicationIndicator(with runningApp: String) {  //??
+		for case let button as MainButton in self.view.subviews {
+			if button.appName == runningApp {
+				button.isRunning = true
+				break
+			}
+		}
+	}
+	fileprivate func hideRunningApplicationIndicator(with runningApp: String) {  //??
+		for case let button as MainButton in self.view.subviews {
+			if button.appName == runningApp {
+				button.isRunning = false
+				break
+			}
+		}
 	}
 	
 	fileprivate func drawButtons() {
@@ -51,7 +87,7 @@ class ViewController: NSViewController {
 		UserDefaults.standard.addObserver(self, forKeyPath: appChanged, options: NSKeyValueObservingOptions.new, context: nil)
 		NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) {
 			switch $0.modifierFlags.intersection(.deviceIndependentFlagsMask) {
-			case [.command, .option]:
+			case [.command, .option, .shift, .control]:
 				NSApp.activate(ignoringOtherApps: true)
 			default:
 				break
