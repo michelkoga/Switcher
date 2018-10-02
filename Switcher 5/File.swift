@@ -33,7 +33,7 @@ class Loader {
 	}
 	//let urls = contentsOf(folder: applicationUrl)
 	
-	// 2. Filter to Apps only *************************************************************************
+	// 2. Filter to   Apps only *************************************************************************
 	static func filterToApplicationsOnly(of strings: [URL]) -> [URL] {
 		var newArray = [URL]()
 		for string in strings {
@@ -93,6 +93,10 @@ class Loader {
 		
 		
 		return []
+	}
+	func name(name: String) -> String {
+		
+		return name
 	}
 	// 4.-1 get iconFolder *************************************************************
 	static func findIconFile(urls: [URL]) -> [URL] {

@@ -23,6 +23,8 @@
 		DE8B795621103B1500B0D8BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8B795421103B1500B0D8BD /* Main.storyboard */; };
 		DE8B795F21103D0300B0D8BD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B795E21103D0300B0D8BD /* Button.swift */; };
 		DE8B796121103D3500B0D8BD /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = DE8B796021103D3500B0D8BD /* TODO */; };
+		DE9627ED2161ED7C00756803 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9627EC2161ED7C00756803 /* PreferencesViewController.swift */; };
+		DE9627F02161F0E700756803 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9627EF2161F0E700756803 /* Preferences.swift */; };
 		DEC2690821105B8E00219B49 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690721105B8E00219B49 /* Window.swift */; };
 		DEC2690A21109B7E00219B49 /* CustomizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690921109B7E00219B49 /* CustomizeViewController.swift */; };
 		DEC2690C2110AA2B00219B49 /* ListOfApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2690B2110AA2B00219B49 /* ListOfApps.swift */; };
@@ -52,6 +54,8 @@
 		DE8B795821103B1500B0D8BD /* Switcher_5.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Switcher_5.entitlements; sourceTree = "<group>"; };
 		DE8B795E21103D0300B0D8BD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		DE8B796021103D3500B0D8BD /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		DE9627EC2161ED7C00756803 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		DE9627EF2161F0E700756803 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		DEC2690721105B8E00219B49 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		DEC2690921109B7E00219B49 /* CustomizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeViewController.swift; sourceTree = "<group>"; };
 		DEC2690B2110AA2B00219B49 /* ListOfApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfApps.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 				DEC2690721105B8E00219B49 /* Window.swift */,
 				DE3531B7212BE19500969F39 /* AppsLoader */,
 				DE8B795421103B1500B0D8BD /* Main.storyboard */,
+				DE9627EE2161ED8500756803 /* Preferences */,
 				DE8B795E21103D0300B0D8BD /* Button.swift */,
 				DEEA040821205FE100277411 /* ViewController */,
 				DE3531C1212C2AE000969F39 /* CustomizeView */,
@@ -142,6 +147,15 @@
 				DEC2690B2110AA2B00219B49 /* ListOfApps.swift */,
 			);
 			path = "Switcher 5";
+			sourceTree = "<group>";
+		};
+		DE9627EE2161ED8500756803 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				DE9627EC2161ED7C00756803 /* PreferencesViewController.swift */,
+				DE9627EF2161F0E700756803 /* Preferences.swift */,
+			);
+			path = Preferences;
 			sourceTree = "<group>";
 		};
 		DEEA040821205FE100277411 /* ViewController */ = {
@@ -240,6 +254,7 @@
 				DE8B795121103B1400B0D8BD /* ViewController.swift in Sources */,
 				DEC269342112ABB500219B49 /* View.swift in Sources */,
 				DEC2690E2110CBF300219B49 /* VisualEffectView.swift in Sources */,
+				DE9627F02161F0E700756803 /* Preferences.swift in Sources */,
 				DEC269122111ADAD00219B49 /* CloseButton.swift in Sources */,
 				DE3531BD212BF67100969F39 /* ScrollView.swift in Sources */,
 				DE8B795F21103D0300B0D8BD /* Button.swift in Sources */,
@@ -247,6 +262,7 @@
 				DE3531BF212BFD7E00969F39 /* ButtonInsideCollection.swift in Sources */,
 				DE3531B9212BE1D000969F39 /* File.swift in Sources */,
 				DE8B794F21103B1400B0D8BD /* AppDelegate.swift in Sources */,
+				DE9627ED2161ED7C00756803 /* PreferencesViewController.swift in Sources */,
 				DEC2690A21109B7E00219B49 /* CustomizeViewController.swift in Sources */,
 				DEC2690821105B8E00219B49 /* Window.swift in Sources */,
 				DE3531BB212BE2F900969F39 /* AppsFilesLoader.swift in Sources */,

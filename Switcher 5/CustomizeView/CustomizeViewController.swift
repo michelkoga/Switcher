@@ -11,6 +11,8 @@ import Cocoa
 class CustomizeViewController: NSViewController {
 	static var appTuple: [(appName: String, url: URL)]? = nil
 	
+	@IBOutlet weak var myButton: CustomizeButton!
+//	myButton.image = NSImage(named: "Day One")
 	@IBOutlet weak var appsCollectionView: NSCollectionView!
 	let customizeMode = "customize_mode"
 	let chosenKey = "chosen_key"
@@ -28,6 +30,7 @@ class CustomizeViewController: NSViewController {
 				self.dismiss(self)
 			}
 		}
+		
 		drawButtons()
 		lastSelectedButton.isBordered = true
 		if let contentSize = self.appsCollectionView.collectionViewLayout?.collectionViewContentSize {

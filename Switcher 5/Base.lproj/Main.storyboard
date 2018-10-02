@@ -1336,7 +1336,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="697"/>
+            <point key="canvasLocation" x="81" y="197"/>
         </scene>
         <!--Customize View Controller-->
         <scene sceneID="uDc-Cc-vxR">
@@ -2779,15 +2779,90 @@
                                     <action selector="dismissModal:" target="443-wp-bPm" id="9w5-CD-v0S"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vvy-K9-eFB">
+                                <rect key="frame" x="43" y="1089" width="91" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="Set Shortcut" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="waX-rd-6CU">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="O28-AB-GgD" kind="show" id="H7e-4c-Ecg"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="appsCollectionView" destination="Qq9-y8-7Gs" id="YM3-mF-3R1"/>
+                        <outlet property="myButton" destination="wdr-ny-Wvf" id="R4m-m1-IIn"/>
                     </connections>
                 </viewController>
                 <customObject id="P9A-fV-Tzs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="1715"/>
+            <point key="canvasLocation" x="81" y="1144"/>
+        </scene>
+        <!--Preferences View Controller-->
+        <scene sceneID="2Rg-Z0-YsV">
+            <objects>
+                <viewController id="O28-AB-GgD" customClass="PreferencesViewController" customModule="Switcher_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="jsa-Yj-iyc">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TKn-zG-a4R">
+                                <rect key="frame" x="154" y="141" width="142" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" borderStyle="bezel" alignment="center" placeholderString="Press Shortcut" drawsBackground="YES" id="CXN-1y-v4a">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Yw-4R-A34">
+                                <rect key="frame" x="340" y="13" width="92" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hXL-Qp-7uS">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="done:" target="O28-AB-GgD" id="atf-ja-jAq"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ggx-OU-19k">
+                                <rect key="frame" x="14" y="13" width="92" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Xaj-Hi-bJt">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancel:" target="O28-AB-GgD" id="RgF-Jc-cUs"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHI-3G-3AU">
+                                <rect key="frame" x="18" y="75" width="110" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Modifiers Only" bezelStyle="regularSquare" imagePosition="left" inset="2" id="HNL-DS-io6">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="modifiersOnlySelectButton:" target="O28-AB-GgD" id="nJf-Gm-2mG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="shortcutTextField" destination="TKn-zG-a4R" id="tSf-Ls-GQk"/>
+                    </connections>
+                </viewController>
+                <customObject id="3Hr-Yh-UVw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="731"/>
         </scene>
     </scenes>
     <resources>

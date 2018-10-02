@@ -1,6 +1,7 @@
 
 DOING:
 - Don't forget commit
+- Shortcut Customization (Problems with coding-encoding, find a way to discriminate left and right modifiers)
 - Preferences Window
 	- Number of rows?
 	- Show key characters

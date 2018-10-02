@@ -9,6 +9,7 @@
 import Cocoa
 
 class ViewController: NSViewController {
+	var modifiers: NSEvent.ModifierFlags = [.command, .shift, .option, .control]
 //	lazy var apps = []()
 	let chosenKey = "chosen_key"
 	let customizeMode = "customize_mode"
@@ -86,8 +87,17 @@ class ViewController: NSViewController {
 		// Observer (2) to redraw buttons when app changed
 		UserDefaults.standard.addObserver(self, forKeyPath: appChanged, options: NSKeyValueObservingOptions.new, context: nil)
 		NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) {
+//			do {
+//				let data = UserDefaults.standard.object(forKey: "key_event")
+//				let eventToSet = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data as! Data) as! NSEvent
+////				self.modifiers = eventToSet.modifierFlags
+//				print("modifiersEvent retrieved")
+//				
+//			} catch {
+//				print(error)
+//			}
 			switch $0.modifierFlags.intersection(.deviceIndependentFlagsMask) {
-			case [.command, .option, .shift, .control]:
+			case Preferences.modifiers:
 				NSApp.activate(ignoringOtherApps: true)
 			default:
 				break
